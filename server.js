@@ -73,6 +73,7 @@ app.get("/users", async (req, res) => {
   res.json(users);
 });
 
+// Endpoint for signing up user
 app.post("/users", async (req, res) => {
   try {
     const { name, email, password } = req.body;
@@ -81,6 +82,18 @@ app.post("/users", async (req, res) => {
     res.status(200).json({ id: newUser._id, accessToken: newUser.accessToken });
   } catch (err) {
     res.status(400).json({ message: "Could not create user.", errors: err });
+  }
+});
+
+// Endpoint for logging in user
+app.post("/sessions", async (req, res) => {
+  const user = await User.findOne({ email: req.body.email });
+  if (user && bcrypt.compareSync(req.body.password, user.password)) {
+    res.json({ id: user._id, accessToken: user.accessToken, name: user.name });
+  } else {
+    res.status(400).json({
+      message: "Could not log in, check your user details.",
+    });
   }
 });
 
