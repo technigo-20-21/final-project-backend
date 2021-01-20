@@ -64,6 +64,20 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
+// Clearing and populating database
+if (process.env.RESET_DATABASE) {
+  const populateDatabase = async () => {
+    await Company.deleteMany();
+
+    companies.forEach(company => {
+      const newCompany = new Company(item);
+      newCompany.save()
+    });
+  };
+  populateDatabase();
+}
+
+
 app.get("/", (req, res) => {
   res.send("Hello world");
 });
