@@ -4,6 +4,11 @@ import cors from "cors";
 import mongoose from "mongoose";
 import crypto from "crypto";
 import bcrypt from "bcrypt-nodejs";
+import dotenv from "dotenv";
+
+import company from "./company"
+
+require('dotenv').config();
 
 const mongoUrl = process.env.MONGO_URL || "mongodb://localhost/torslandalocals";
 mongoose.connect(mongoUrl, { useNewUrlParser: true, useUnifiedTopology: true });
@@ -51,19 +56,14 @@ userSchema.pre("save", async function (next) {
 });
 
 const User = mongoose.model("User", userSchema);
+const Company = mongoose.model("Company", company);
 
-// Defines the port the app will run on. Defaults to 8080, but can be
-// overridden when starting the server. For example:
-//
-//   PORT=9000 npm start
 const port = process.env.PORT || 8080;
 const app = express();
 
-// Add middlewares to enable cors and json body parsing
 app.use(cors());
 app.use(bodyParser.json());
 
-// Start defining your routes here
 app.get("/", (req, res) => {
   res.send("Hello world");
 });
