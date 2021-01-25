@@ -6,9 +6,10 @@ import crypto from "crypto";
 import bcrypt from "bcrypt-nodejs";
 import dotenv from "dotenv";
 
-import company from "./company"
+import local from "./models/localModel"
+import localsData from "./data/locals.json"
 
-require('dotenv').config();
+dotenv.config();
 
 const mongoUrl = process.env.MONGO_URL || "mongodb://localhost/torslandalocals";
 mongoose.connect(mongoUrl, { useNewUrlParser: true, useUnifiedTopology: true });
@@ -56,7 +57,6 @@ userSchema.pre("save", async function (next) {
 });
 
 const User = mongoose.model("User", userSchema);
-const Company = mongoose.model("Company", company);
 
 const port = process.env.PORT || 8080;
 const app = express();
@@ -67,11 +67,11 @@ app.use(bodyParser.json());
 // Clearing and populating database
 if (process.env.RESET_DATABASE) {
   const populateDatabase = async () => {
-    await Company.deleteMany();
+    await local.deleteMany();
 
-    companies.forEach(company => {
-      const newCompany = new Company(item);
-      newCompany.save()
+    localsData.forEach(item => {
+      const newLocal= local(item);
+      newLocal.save()
     });
   };
   populateDatabase();

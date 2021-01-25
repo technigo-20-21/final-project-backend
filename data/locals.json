@@ -1,0 +1,478 @@
+[
+    {
+      "category": "Eat",
+      "name": "Kalimera",
+      "tagline": "Grekland i Amhult",
+      "img": "kalimera2019logo1_infopage.jpg",
+      "url": "https://restaurangkalimera.gastrogate.com/"
+    },
+    {
+      "category": "Eat",
+      "name": "Green Market",
+      "tagline": "Grön fika och mat i Amhult",
+      "img": "Green-Market.jpeg",
+      "url": "https://www.greenmarket.se"
+    },
+    {
+      "category": "Eat",
+      "name": "Tilda & Josper",
+      "tagline": "Grill med asiatisk touch",
+      "img": "Tilda_Josper.png",
+      "url": "https://www.tildajosper.se/"
+    },
+    {
+      "category": "Eat",
+      "name": "San Cero",
+      "tagline": "Pizza",
+      "img": "SanCero-logo.jpg",
+      "url": "http://sancero.yourpage.se/"
+    },
+    {
+      "category": "Eat",
+      "name": "Mr Thai",
+      "tagline": "Thailand i Amhult",
+      "img": "Mr_thai_food.jpg",
+      "url": "https://www.facebook.com/MrthaiEat/"
+    },
+    {
+      "category": "Eat",
+      "name": "Nya flygande korven",
+      "tagline": "Klassisk korvmoj i Amhult",
+      "img": "Nya flygande korven.jpeg",
+      "url": "https://www.facebook.com/flygandekorventorslanda/"
+    },
+    {
+      "category": "Eat",
+      "name": "Restaurang Hörnet",
+      "tagline": "Traditionell kvarterskrog i Amhult",
+      "img": "restaurang_hornet_logo.png",
+      "url": "https://restaurang-hornet.webnode.se/"
+    },
+    {
+      "category": "Eat",
+      "name": "Sockermajas",
+      "tagline": "Hantverksbageri med lunch på Krysset",
+      "img": "sockermaja_logo.png",
+      "url": "https://sockermajas.se/"
+    },
+    {
+      "category": "Eat",
+      "name": "Masala Corner",
+      "tagline": "Indiskt på Krysset",
+      "img": "Masala corner.jpg",
+      "url": "https://www.masalacorner.nu/"
+    },
+    {
+      "category": "Eat",
+      "name": "Torslanda Pizzeria",
+      "tagline": "Pizza på Krysset",
+      "img": "torslandapizzeria.jpg",
+      "url": "http://torslandapizzeria.se"
+    },
+    {
+      "category": "Eat",
+      "name": "Torslanda Thaikök",
+      "tagline": "Thailand på torget",
+      "img": "Torslanda Thaikok.jpg",
+      "url": "https://torslanda-thaikok.business.site/"
+    },
+    {
+      "category": "Eat",
+      "name": "San Remo pizzeria",
+      "tagline": "Pizza vid Krysset",
+      "img": "san_remo_logo.jpg",
+      "url": "https://sanremo.se/"
+    },
+    {
+      "category": "Eat",
+      "name": "Tsuki Hana",
+      "tagline": "Japanskt möter svenskt på Krysset",
+      "img": "tsuki_hana_logo.jpg",
+      "url": "https://www.tsukihana.net/"
+    },
+    {
+      "category": "Eat",
+      "name": "Tommys pizzeria",
+      "tagline": "Pizza på Torslanda torg",
+      "img": "tommys_pizzeria.png",
+      "url": "http://tommyspizzeria.se/?fbclid=IwAR28krKPYoFcWN0cJ-IlF3dHrUPxn1n7P5Q8GgncDlvlHrqHNXQ0bs-6RM4"
+    },
+    {
+      "category": "Eat",
+      "name": "Lillebygrillen",
+      "tagline": "Road-diner i Lilleby",
+      "img": "lillebygrillen_logo.png",
+      "url": "http://www.lillebygrillen.se/"
+    },
+    {
+      "category": "Eat",
+      "name": "Mjöviks bageri och gårdsbutik",
+      "tagline": "Hantverksbageri i Lilleby",
+      "img": "mjoviks_bageri_logo.png",
+      "url": "http://www.mjoviks.se/"
+    },
+    {
+      "category": "Eat",
+      "name": "Carls café & bistro",
+      "tagline": "Oas vid havet",
+      "img": "carls_cafe_logo.jpg",
+      "url": "https://www.sillvik.nu/"
+    },
+    {
+      "category": "Eat",
+      "name": "Vi släcker din hunger",
+      "tagline": "Foodtruck från Lilleby",
+      "img": "vi_slacker_din_hunger.jpg",
+      "url": "https://www.facebook.com/vislackerdinhunger/"
+    },
+    {
+      "category": "Shopping",
+      "name": "I dig denim",
+      "tagline": "Denim i Amhult",
+      "img": "idigdenim-logo.png",
+      "url": "https://idigdenim.com"
+    },
+    {
+      "category": "Shopping",
+      "name": "My Baby",
+      "tagline": "Allt till bebis i Amhult",
+      "img": "my_baby_logo.jpg",
+      "url": "https://www.mybaby.se/"
+    },
+    {
+      "category": "Shopping",
+      "name": "Färgboden Torslanda",
+      "tagline": "Färg tapet och inredning på Krysset",
+      "img": "fargboden_torslanda_white.png",
+      "url": "https://fargboden.se/"
+    },
+    {
+      "category": "Beauty",
+      "name": "Skin by Wihlney",
+      "tagline": "Skönhet vid rececentrum",
+      "img": "skinbywihlney.jpg",
+      "url": "https://www.bokadirekt.se/places/skin-by-wihlney-14033"
+    },
+    {
+      "category": "Service",
+      "name": "Torslanda skomakeri",
+      "tagline": "Skor och nycklar i Amhult",
+      "img": "torslandaskomakeri.jpg",
+      "url": "https://www.facebook.com/awadis.asadour.96"
+    },
+    {
+      "category": "Service",
+      "name": "Torslanda trafikskola",
+      "tagline": "Körskola i Amhult",
+      "img": "torslanda_trafikskola_logo_white.png",
+      "url": "http://www.torslandatrafikskola.se/"
+    },
+    {
+      "category": "Shopping",
+      "name": "Vännplatsen second hand",
+      "tagline": "Second hand i Torslanda",
+      "img": "vannplatsen_logo.jpg",
+      "url": "http://www.vannplatsen.se/"
+    },
+    {
+      "category": "Shopping",
+      "name": "Cinco",
+      "tagline": "Kläder i Amhult",
+      "img": "cinco_logo.jpg",
+      "url": "https://www.facebook.com/CincoAmhult/"
+    },
+    {
+      "category": "Shopping",
+      "name": "iems",
+      "tagline": "Inredning i Amhult",
+      "img": "iems_logo.jpg",
+      "url": "https://iems.se/butiker/goteborg-torslanda/"
+    },
+    {
+      "category": "Shopping",
+      "name": "Hemtex",
+      "tagline": "Heminredning i Amhult",
+      "img": "hemtex_logo.svg",
+      "url": "https://www.hemtex.se/hitta-butik/goteborg-amhult/"
+    },
+    {
+      "category": "Shopping",
+      "name": "Lindex",
+      "tagline": "Kläder i Amhult",
+      "img": "lindex_logo.png",
+      "url": "https://www.lindex.com/se/hitta-din-butik/"
+    },
+    {
+      "category": "Shopping",
+      "name": "Torslanda färg & tapet",
+      "tagline": "Färg och tapet i Amhult",
+      "img": "torslanda_farg_tapet_logo.jpeg",
+      "url": "http://www.torslandafarg.se/"
+    },
+    {
+      "category": "Service",
+      "name": "Gillis Edman begravningsbyrå",
+      "tagline": "Begravningsbyrå på Torslanda torg",
+      "img": "gillis_edman_torslanda.svg",
+      "url": "https://www.gillisedman.se/kontakt/torslanda/"
+    },
+    {
+      "category": "Service",
+      "name": "Torslanda begravningsbyrå",
+      "tagline": "Begravningsbyrå i Amhult",
+      "img": "torslanda_begravningsbyra_logo.gif",
+      "url": "https://www.begrav.se/?fbclid=IwAR3Jx8zQAGc7NvQW34nK-Oh6s6GZN2rs2i-8AxdHVBZJ-Ri5aRLiP7of45Q"
+    },
+    {
+      "category": "Eat",
+      "name": "Björlanda burgan",
+      "tagline": "Burgare med lokalproducerat kött",
+      "img": "bjorlanda_burgan_logo.jpg",
+      "url": "https://www.facebook.com/Bjorlandaburgan/"
+    },
+    {
+      "category": "Service",
+      "name": "Floristmästarna Torslanda",
+      "tagline": "Professionellt binderi i Amhult",
+      "img": "floristmastarna_torslanda.jpg",
+      "url": "https://www.floristmastarna.se/"
+    },
+    {
+      "category": "Beauty",
+      "name": "Apotek Hjärtat",
+      "tagline": "Apotek i Amhult och på Torslanda torg",
+      "img": "apotek_hjartat_logo.jpg",
+      "url": "https://www.apotekhjartat.se/hitta-apotek-hjartat/?q=torslanda"
+    },
+    {
+      "category": "Beauty",
+      "name": "Kronans Apotek",
+      "tagline": "Apotek i Amhult",
+      "img": "kronans_apotek_logo.png",
+      "url": "https://www.kronansapotek.se/store/Kronans%20Apotek%20Torslanda"
+    },
+    {
+      "category": "Beauty",
+      "name": "Hälsokraft Torslanda",
+      "tagline": "Hälsokost i Amhult",
+      "img": "halsokraft_logo.png",
+      "url": "https://www.facebook.com/halsokrafttorslanda/?ref=page_internal"
+    },
+    {
+      "category": "Beauty",
+      "name": "Bling bling spa",
+      "tagline": "Fixa naglar och fransar på Torslanda torg",
+      "img": "bling_bling_spa_logo.jpg",
+      "url": "https://www.facebook.com/blingspanailsfransar/about/?ref=page_internal"
+    },
+    {
+      "category": "Beauty",
+      "name": "First lady spa",
+      "tagline": "Skönhet i Björlanda eller på plats",
+      "img": "first_lady_logo.png",
+      "url": "https://firstlady.se/"
+    },
+    {
+      "category": "Beauty",
+      "name": "Meddo solarium",
+      "tagline": "Sola på Torslanda torg",
+      "img": "meddo_solarium_logo.png",
+      "url": "https://www.facebook.com/MeddoTorslanda/"
+    },
+    {
+      "category": "Beauty",
+      "name": "Shiatsurummet",
+      "tagline": "Japansk massage på Torslanda torg",
+      "img": "shiatsurummet_logo.jpeg",
+      "url": "https://shiatsurummet.se/"
+    },
+    {
+      "category": "Beauty",
+      "name": "Friskis&Svettis",
+      "tagline": "Träning i Amhult",
+      "img": "friskissvettis.png",
+      "url": "https://www.friskissvettis.se/Goteborg/Harfinnsvi/Torslanda"
+    },
+    {
+      "category": "Beauty",
+      "name": "Nordic Wellness",
+      "tagline": "Träna i Amhult eller Torslanda torg",
+      "img": "nordicwellness_logo.svg",
+      "url": "https://nordicwellness.se/vara-klubbar/goteborg/torslanda-amhult/"
+    },
+    {
+      "category": "Beauty",
+      "name": "Living People",
+      "tagline": "Träna ute i Björlanda",
+      "img": "livingpeople_logo.png",
+      "url": "http://www.livingpeople.nu/"
+    },
+    {
+      "category": "Beauty",
+      "name": "Salong Aquarius",
+      "tagline": "Frisör vid Krysset",
+      "img": "aquarius_logo.jpg",
+      "url": "https://www.facebook.com/salongaquarius"
+    },
+    {
+      "category": "Beauty",
+      "name": "Klippa Torslanda",
+      "tagline": "Frisör i Amhult",
+      "img": "klippa_logo.jpg",
+      "url": "https://klippa.nu/salonger/torslanda/"
+    },
+    {
+      "category": "Beauty",
+      "name": "Klipperian Torslanda",
+      "tagline": "Frisör på Torslanda torg",
+      "img": "klipperian_logo.jpg",
+      "url": "https://www.facebook.com/klipperiantorslanda/"
+    },
+    {
+      "category": "Beauty",
+      "name": "Klippotek Dandy",
+      "tagline": "Frisör i Amhult",
+      "img": "logotyp_klippotek_dandy_dark_background.svg",
+      "url": "http://klippotekdandy.se/salonger/torslanda/"
+    },
+    {
+      "category": "Shopping",
+      "name": "Blomsterlandet",
+      "tagline": "Handelsträdgård i Amhult",
+      "img": "blomsterlandet_logo.jpg",
+      "url": "https://www.blomsterlandet.se/hitta-din-butik/torslanda/"
+    },
+    {
+      "category": "Shopping",
+      "name": "Malms väskor",
+      "tagline": "Väskor i Amhult",
+      "img": "malms_vaskor_logo.jpg",
+      "url": "http://malmsvaskor.se/2.html"
+    },
+    {
+      "category": "Shopping",
+      "name": "Torslanda Blomsterhandel",
+      "tagline": "Florist på Torslanda torg",
+      "img": "torslanda_blomsterhandel_logo.jpg",
+      "url": "https://www.facebook.com/pages/category/Florist/Torslanda-Blomsterhandel-AB-107865215948388/"
+    },
+    {
+      "category": "Shopping",
+      "name": "Torslanda djurbutik veterinärfoder",
+      "tagline": "Djurbutik i Amhult",
+      "img": "torslanda_djurbutik_veterinarfoder_logo.jpg",
+      "url": "https://www.torslandadjurbutik.se/"
+    },
+    {
+      "category": "Shopping",
+      "name": "Elon Torslanda",
+      "tagline": "Vitvaror och annat till hemmet vid resecentrum",
+      "img": "elon_logo.png",
+      "url": "https://www.elon.se/butiker/torslanda/elon-friggahuset-torslanda"
+    },
+    {
+      "category": "Shopping",
+      "name": "Byggmax Torslanda",
+      "tagline": "Bygghandel vid Krysset",
+      "img": "byggmax_torslanda.svg",
+      "url": "https://www.byggmax.se/butiker/gbg-torslanda"
+    },
+    {
+      "category": "Service",
+      "name": "Mobilkliniken",
+      "tagline": "Fixar mobil/platta på Torslanda torg",
+      "img": "mobilkliniken_logo.jpg",
+      "url": "https://www.facebook.com/MobilKliniken.T/"
+    },
+    {
+      "category": "Service",
+      "name": "Gysens hundcenter",
+      "tagline": "Hunddagis på Torslanda torg",
+      "img": "gysens_hundcenter_logo.png",
+      "url": "http://www.gysens.se/"
+    },
+    {
+      "category": "Food",
+      "name": "Godishuset",
+      "tagline": "Godis i centrala Torslanda",
+      "img": "godishuset_logo.jpg",
+      "url": "https://godis-huset.business.site/"
+    },
+    {
+      "category": "Food",
+      "name": "Amhults gottehus",
+      "tagline": "Godis och glass vid resecentrum",
+      "img": "amhult_gottehus_logo.jpg",
+      "url": "https://www.facebook.com/4-Gott-Amhult-192958097872439/?ref=page_internal"
+    },
+    {
+      "category": "Food",
+      "name": "Hemköp",
+      "tagline": "Livsmedel på Torget",
+      "img": "hemkop_logo.jpeg",
+      "url": "https://www.hemkop.se/butik/4792?gclsrc=aw.ds&gclsrc=aw.ds&gclid=CjwKCAjwhOD0BRAQEiwAK7JHmANmzp9uZKA1SCpeDaZmMNPHNefYyK-r824u38UXs6vBgsPk_HIKCBoCRDUQAvD_BwE"
+    },
+    {
+      "category": "Food",
+      "name": "Ica Maxi",
+      "tagline": "Stormarknad i Amhult",
+      "img": "ica_maxi_torslanda_logo.png",
+      "url": "https://www.ica.se/butiker/maxi/goteborg/maxi-ica-stormarknad-torslanda-11601/start/"
+    },
+    {
+      "category": "Food",
+      "name": "Ica Nära",
+      "tagline": "Livsmedel i Björlanda",
+      "img": "ica-nara-logotyp.png",
+      "url": "https://www.ica.se/butiker/nara/goteborg/ica-nara-bjorlanda-16621/start/?gclid=Cj0KCQjws_r0BRCwARIsAMxfDRgHJib6Ty59kQB4UMsKYHn9RfVOuEHwYlU-EZ5arexJEma3sW33WT8aAtw7EALw_wcB"
+    },
+    {
+      "category": "Food",
+      "name": "Willys",
+      "tagline": "Stormarknad i Amhult",
+      "img": "willys_logo.svg",
+      "url": "https://www.willys.se/butik/2274"
+    },
+    {
+      "category": "Food",
+      "name": "Willys Hemma",
+      "tagline": "Livsmedel på Runskriftsgatan",
+      "img": "willys_hemma_logo.png",
+      "url": "https://www.willys.se/butik/2855"
+    },
+    {
+      "category": "Food",
+      "name": "Torslanda fisk",
+      "tagline": "Havets delikatesser på Torslanda torg",
+      "img": "torslanda_fisk_logo.png",
+      "url": "http://www.torslandafisk.se/"
+    },
+    {
+      "category": "Food",
+      "name": "Torslanda frukthall",
+      "tagline": "Frukt å grönt på Torslanda torg",
+      "img": "torslanda_frukthall_logo.jpg",
+      "url": "https://www.facebook.com/torslandafrukthall"
+    },
+    {
+      "category": "Food",
+      "name": "Björlanda Fisk och skaldjur",
+      "tagline": "Havets delikatesser i Björlanda",
+      "img": "björlanda_fisk_skaldjur_logo.jpg",
+      "url": "http://bjorlandafisk.se/index.html"
+    },
+    {
+      "category": "Food",
+      "name": "Åkes hönökaka",
+      "tagline": "Bräckbod vid Krysset",
+      "img": "akes_honokaka_logo.png",
+      "url": "http://www.honokaka.se/kontakt/oppettider"
+    },
+    {
+      "category": "Beauty",
+      "name": "Topskills",
+      "tagline": "Coachning och Digitalisering vid Krysset",
+      "img": "topskills_logo.jpg",
+      "url": "https://topskills.se"
+    }
+  ]

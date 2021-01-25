@@ -1,10 +1,8 @@
 import mongoose from 'mongoose';
 
-module.exports = Company;
-Schema = mongoose.Schema;
+const Schema = mongoose.Schema;
 
-
-const company = new Schema({
+const localSchema = new Schema({
     category: {
         type: String,
         required: true,
@@ -15,12 +13,13 @@ const company = new Schema({
     tagline: {
         type: String,
     },
-    image_logo: {
+    img: {
         type: String,
     },
-    website_link: {
+    url: {
         type: String,
     }
 });
 
-module.exports = company;
+const local = mongoose.model("local", localSchema);
+module.exports = local;
