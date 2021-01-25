@@ -16,7 +16,12 @@ mongoose.connect(mongoUrl, { useNewUrlParser: true, useUnifiedTopology: true });
 mongoose.Promise = Promise;
 
 const userSchema = new mongoose.Schema({
-  name: {
+  firstname: {
+    type: String,
+    required: [true, "Name is required"],
+    minlength: [2, "Use a minimum of 2 characters"],
+  },
+  lastname: {
     type: String,
     required: [true, "Name is required"],
     minlength: [2, "Use a minimum of 2 characters"],
@@ -90,8 +95,8 @@ app.get("/users", async (req, res) => {
 // Endpoint for signing up user
 app.post("/users", async (req, res) => {
   try {
-    const { name, email, password } = req.body;
-    const newUser = new User({ name, email, password });
+    const { firstname, lastname, email, password } = req.body;
+    const newUser = new User({ firstname, lastname, email, password });
     await newUser.save();
     res.status(200).json({ id: newUser._id, accessToken: newUser.accessToken });
   } catch (err) {
@@ -103,7 +108,7 @@ app.post("/users", async (req, res) => {
 app.post("/sessions", async (req, res) => {
   const user = await User.findOne({ email: req.body.email });
   if (user && bcrypt.compareSync(req.body.password, user.password)) {
-    res.json({ id: user._id, accessToken: user.accessToken, name: user.name });
+    res.json({ id: user._id, accessToken: user.accessToken, firstname: user.firstname, lastname: user.lastname });
   } else {
     res.status(400).json({
       message: "Could not log in, check your user details.",
