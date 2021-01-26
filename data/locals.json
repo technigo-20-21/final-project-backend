@@ -1,125 +1,125 @@
 [
     {
-      "category": "Eat",
+      "category": "Restaurants",
       "name": "Kalimera",
       "tagline": "Grekland i Amhult",
       "img": "kalimera2019logo1_infopage.jpg",
       "url": "https://restaurangkalimera.gastrogate.com/"
     },
     {
-      "category": "Eat",
+      "category": "Restaurants",
       "name": "Green Market",
       "tagline": "Grön fika och mat i Amhult",
       "img": "Green-Market.jpeg",
       "url": "https://www.greenmarket.se"
     },
     {
-      "category": "Eat",
+      "category": "Restaurants",
       "name": "Tilda & Josper",
       "tagline": "Grill med asiatisk touch",
       "img": "Tilda_Josper.png",
       "url": "https://www.tildajosper.se/"
     },
     {
-      "category": "Eat",
+      "category": "Restaurants",
       "name": "San Cero",
       "tagline": "Pizza",
       "img": "SanCero-logo.jpg",
       "url": "http://sancero.yourpage.se/"
     },
     {
-      "category": "Eat",
+      "category": "Restaurants",
       "name": "Mr Thai",
       "tagline": "Thailand i Amhult",
       "img": "Mr_thai_food.jpg",
-      "url": "https://www.facebook.com/MrthaiEat/"
+      "url": "https://www.facebook.com/MrthaiRestaurants/"
     },
     {
-      "category": "Eat",
+      "category": "Restaurants",
       "name": "Nya flygande korven",
       "tagline": "Klassisk korvmoj i Amhult",
       "img": "Nya flygande korven.jpeg",
       "url": "https://www.facebook.com/flygandekorventorslanda/"
     },
     {
-      "category": "Eat",
+      "category": "Restaurants",
       "name": "Restaurang Hörnet",
       "tagline": "Traditionell kvarterskrog i Amhult",
       "img": "restaurang_hornet_logo.png",
       "url": "https://restaurang-hornet.webnode.se/"
     },
     {
-      "category": "Eat",
+      "category": "Restaurants",
       "name": "Sockermajas",
       "tagline": "Hantverksbageri med lunch på Krysset",
       "img": "sockermaja_logo.png",
       "url": "https://sockermajas.se/"
     },
     {
-      "category": "Eat",
+      "category": "Restaurants",
       "name": "Masala Corner",
       "tagline": "Indiskt på Krysset",
       "img": "Masala corner.jpg",
       "url": "https://www.masalacorner.nu/"
     },
     {
-      "category": "Eat",
+      "category": "Restaurants",
       "name": "Torslanda Pizzeria",
       "tagline": "Pizza på Krysset",
       "img": "torslandapizzeria.jpg",
       "url": "http://torslandapizzeria.se"
     },
     {
-      "category": "Eat",
+      "category": "Restaurants",
       "name": "Torslanda Thaikök",
       "tagline": "Thailand på torget",
       "img": "Torslanda Thaikok.jpg",
       "url": "https://torslanda-thaikok.business.site/"
     },
     {
-      "category": "Eat",
+      "category": "Restaurants",
       "name": "San Remo pizzeria",
       "tagline": "Pizza vid Krysset",
       "img": "san_remo_logo.jpg",
       "url": "https://sanremo.se/"
     },
     {
-      "category": "Eat",
+      "category": "Restaurants",
       "name": "Tsuki Hana",
       "tagline": "Japanskt möter svenskt på Krysset",
       "img": "tsuki_hana_logo.jpg",
       "url": "https://www.tsukihana.net/"
     },
     {
-      "category": "Eat",
+      "category": "Restaurants",
       "name": "Tommys pizzeria",
       "tagline": "Pizza på Torslanda torg",
       "img": "tommys_pizzeria.png",
       "url": "http://tommyspizzeria.se/?fbclid=IwAR28krKPYoFcWN0cJ-IlF3dHrUPxn1n7P5Q8GgncDlvlHrqHNXQ0bs-6RM4"
     },
     {
-      "category": "Eat",
+      "category": "Restaurants",
       "name": "Lillebygrillen",
       "tagline": "Road-diner i Lilleby",
       "img": "lillebygrillen_logo.png",
       "url": "http://www.lillebygrillen.se/"
     },
     {
-      "category": "Eat",
+      "category": "Restaurants",
       "name": "Mjöviks bageri och gårdsbutik",
       "tagline": "Hantverksbageri i Lilleby",
       "img": "mjoviks_bageri_logo.png",
       "url": "http://www.mjoviks.se/"
     },
     {
-      "category": "Eat",
+      "category": "Restaurants",
       "name": "Carls café & bistro",
       "tagline": "Oas vid havet",
       "img": "carls_cafe_logo.jpg",
       "url": "https://www.sillvik.nu/"
     },
     {
-      "category": "Eat",
+      "category": "Restaurants",
       "name": "Vi släcker din hunger",
       "tagline": "Foodtruck från Lilleby",
       "img": "vi_slacker_din_hunger.jpg",
@@ -224,7 +224,7 @@
       "url": "https://www.begrav.se/?fbclid=IwAR3Jx8zQAGc7NvQW34nK-Oh6s6GZN2rs2i-8AxdHVBZJ-Ri5aRLiP7of45Q"
     },
     {
-      "category": "Eat",
+      "category": "Restaurants",
       "name": "Björlanda burgan",
       "tagline": "Burgare med lokalproducerat kött",
       "img": "bjorlanda_burgan_logo.jpg",
@@ -392,77 +392,77 @@
       "url": "http://www.gysens.se/"
     },
     {
-      "category": "Food",
+      "category": "Groceries",
       "name": "Godishuset",
       "tagline": "Godis i centrala Torslanda",
       "img": "godishuset_logo.jpg",
       "url": "https://godis-huset.business.site/"
     },
     {
-      "category": "Food",
+      "category": "Groceries",
       "name": "Amhults gottehus",
       "tagline": "Godis och glass vid resecentrum",
       "img": "amhult_gottehus_logo.jpg",
       "url": "https://www.facebook.com/4-Gott-Amhult-192958097872439/?ref=page_internal"
     },
     {
-      "category": "Food",
+      "category": "Groceries",
       "name": "Hemköp",
       "tagline": "Livsmedel på Torget",
       "img": "hemkop_logo.jpeg",
       "url": "https://www.hemkop.se/butik/4792?gclsrc=aw.ds&gclsrc=aw.ds&gclid=CjwKCAjwhOD0BRAQEiwAK7JHmANmzp9uZKA1SCpeDaZmMNPHNefYyK-r824u38UXs6vBgsPk_HIKCBoCRDUQAvD_BwE"
     },
     {
-      "category": "Food",
+      "category": "Groceries",
       "name": "Ica Maxi",
       "tagline": "Stormarknad i Amhult",
       "img": "ica_maxi_torslanda_logo.png",
       "url": "https://www.ica.se/butiker/maxi/goteborg/maxi-ica-stormarknad-torslanda-11601/start/"
     },
     {
-      "category": "Food",
+      "category": "Groceries",
       "name": "Ica Nära",
       "tagline": "Livsmedel i Björlanda",
       "img": "ica-nara-logotyp.png",
       "url": "https://www.ica.se/butiker/nara/goteborg/ica-nara-bjorlanda-16621/start/?gclid=Cj0KCQjws_r0BRCwARIsAMxfDRgHJib6Ty59kQB4UMsKYHn9RfVOuEHwYlU-EZ5arexJEma3sW33WT8aAtw7EALw_wcB"
     },
     {
-      "category": "Food",
+      "category": "Groceries",
       "name": "Willys",
       "tagline": "Stormarknad i Amhult",
       "img": "willys_logo.svg",
       "url": "https://www.willys.se/butik/2274"
     },
     {
-      "category": "Food",
+      "category": "Groceries",
       "name": "Willys Hemma",
       "tagline": "Livsmedel på Runskriftsgatan",
       "img": "willys_hemma_logo.png",
       "url": "https://www.willys.se/butik/2855"
     },
     {
-      "category": "Food",
+      "category": "Groceries",
       "name": "Torslanda fisk",
       "tagline": "Havets delikatesser på Torslanda torg",
       "img": "torslanda_fisk_logo.png",
       "url": "http://www.torslandafisk.se/"
     },
     {
-      "category": "Food",
+      "category": "Groceries",
       "name": "Torslanda frukthall",
       "tagline": "Frukt å grönt på Torslanda torg",
       "img": "torslanda_frukthall_logo.jpg",
       "url": "https://www.facebook.com/torslandafrukthall"
     },
     {
-      "category": "Food",
+      "category": "Groceries",
       "name": "Björlanda Fisk och skaldjur",
       "tagline": "Havets delikatesser i Björlanda",
-      "img": "björlanda_fisk_skaldjur_logo.jpg",
+      "img": "bjorlanda_fisk_skaldjur_logo.jpg",
       "url": "http://bjorlandafisk.se/index.html"
     },
     {
-      "category": "Food",
+      "category": "Groceries",
       "name": "Åkes hönökaka",
       "tagline": "Bräckbod vid Krysset",
       "img": "akes_honokaka_logo.png",

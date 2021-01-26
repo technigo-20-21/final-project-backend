@@ -5,7 +5,6 @@ const Schema = mongoose.Schema;
 const localSchema = new Schema({
     category: {
         type: String,
-        required: true,
     },
     name: {
         type: String,
@@ -13,13 +12,16 @@ const localSchema = new Schema({
     tagline: {
         type: String,
     },
-    img: {
+    img_url: {
         type: String,
+    },
+    img_id: {
+        type: String
     },
     url: {
         type: String,
     }
 });
 
-const local = mongoose.model("local", localSchema);
-module.exports = local;
+const Local = mongoose.model("Local", localSchema);
+module.exports = Local;
