@@ -5,11 +5,11 @@ import mongoose from "mongoose";
 import crypto from "crypto";
 import bcrypt from "bcrypt-nodejs";
 import dotenv from "dotenv";
-import cloudinaryStorage from 'multer-storage-cloudinary';
-import multer from 'multer';
+import cloudinaryStorage from "multer-storage-cloudinary";
+import multer from "multer";
 import Local from "./models/localModel";
 import localsData from "./data/locals.json";
-import cloudinaryFramework from 'cloudinary';
+import cloudinaryFramework from "cloudinary";
 
 dotenv.config();
 
@@ -17,21 +17,20 @@ const mongoUrl = process.env.MONGO_URL || "mongodb://localhost/torslandalocals";
 mongoose.connect(mongoUrl, { useNewUrlParser: true, useUnifiedTopology: true });
 mongoose.Promise = Promise;
 
-
 const cloudinary = cloudinaryFramework.v2;
 cloudinary.config({
-    cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
-    api_key: process.env.CLOUDINARY_API_KEY,
-    api_secret: process.env.CLOUDINARY_API_SECRET
-})
+  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+  api_key: process.env.CLOUDINARY_API_KEY,
+  api_secret: process.env.CLOUDINARY_API_SECRET,
+});
 
 const storage = cloudinaryStorage({
-    cloudinary,
-    params: {
-        folder: 'image_logo', 
-        transformation:[{ width: 500, height: 500, crop: 'limit'}]
-    },
-})
+  cloudinary,
+  params: {
+    folder: "image_logo",
+    transformation: [{ width: 500, height: 500, crop: "limit" }],
+  },
+});
 
 const parser = multer({ storage });
 
@@ -83,6 +82,22 @@ userSchema.pre("save", async function (next) {
 
 const User = mongoose.model("User", userSchema);
 
+const authenticateUser = async (req, res, next) => {
+  try {
+    const accessToken = req.header("Authorization");
+    const user = await User.findOne({ accessToken });
+
+    if (!user) {
+      throw "User not found.";
+    }
+    req.user = user;
+    next();
+  } catch (err) {
+    res.status(401).json({ error: "Something went wront, please try again." });
+    console.log(err);
+  }
+};
+
 const port = process.env.PORT || 8080;
 const app = express();
 
@@ -94,36 +109,34 @@ if (process.env.RESET_DATABASE) {
   const populateDatabase = async () => {
     await Local.deleteMany();
 
-    localsData.forEach(item => {
-      const imagePath = `./logos/${item.category.toLocaleLowerCase()}/${item.img}`;
+    localsData.forEach((item) => {
+      const imagePath = `./logos/${item.category.toLocaleLowerCase()}/${
+        item.img
+      }`;
       console.log(imagePath);
-      cloudinary.uploader.upload(imagePath,
-        {
-          folder:`image_logo/${item.category.toLocaleLowerCase()}`,
+      cloudinary.uploader
+        .upload(imagePath, {
+          folder: `image_logo/${item.category.toLocaleLowerCase()}`,
           use_filename: true,
           unique_filename: false,
-          overwrite: true
+          overwrite: true,
         })
-        .then(result => {
+        .then((result) => {
           item.img_url = result.url;
           item.img_id = result.public_id;
-          const newLocal = new Local(item)
-          newLocal.save()
-          console.log(`saved ${item.name}`)
+          const newLocal = new Local(item);
+          newLocal.save();
+          console.log(`saved ${item.name}`);
         })
-        .catch(error => console.log(error))
-     
+        .catch((error) => console.log(error));
     });
   };
   populateDatabase();
 }
 
-
 app.get("/", (req, res) => {
-  res.send("Hello world");
+  res.send("API for final project, made by Evelina and Petra");
 });
-
-
 
 // User endpoints
 app.get("/users", async (req, res) => {
@@ -147,7 +160,12 @@ app.post("/users", async (req, res) => {
 app.post("/sessions", async (req, res) => {
   const user = await User.findOne({ email: req.body.email });
   if (user && bcrypt.compareSync(req.body.password, user.password)) {
-    res.json({ id: user._id, accessToken: user.accessToken, firstname: user.firstname, lastname: user.lastname });
+    res.json({
+      id: user._id,
+      accessToken: user.accessToken,
+      firstname: user.firstname,
+      lastname: user.lastname,
+    });
   } else {
     res.status(400).json({
       message: "Could not log in, check your user details.",
@@ -156,28 +174,35 @@ app.post("/sessions", async (req, res) => {
 });
 
 // Locals endpoints
-app.post("/locals", parser.single('img_url'), async (req,res) => {
+app.post("/locals", parser.single("img_url"), async (req, res) => {
   // Local.findOne({name:req.body.name},(data)=> {
   //   if(data===null){
-      const newLocal = new Local({
-        category:req.body.category,
-        name:req.body.name,
-        tagline: req.body.tagline,
-        img_url: req.file.path,
-        img_id: req.file.filename,
-        url: req.body.url
-      })
-      newLocal.save((err, data)=>{
-        if(err) return res.json({Error: err})
-        return res.json(data);
-      })
-    // } else {
-    //   return res.json({message: "Local already exist"})
-     
-  // })
-})
+  const newLocal = new Local({
+    category: req.body.category,
+    name: req.body.name,
+    tagline: req.body.tagline,
+    img_url: req.file.path,
+    img_id: req.file.filename,
+    url: req.body.url,
+  });
+  newLocal.save((err, data) => {
+    if (err) return res.json({ Error: err });
+    return res.json(data);
+  });
+  // } else {
+  //   return res.json({message: "Local already exist"})
 
-app.get("/")
+  // })
+});
+
+app.get("/:id/user", authenticateUser);
+app.get("/:id/user", async (req, res) => {
+  const accessToken = req.header("Authorization");
+  const user = await User.findOne({ accessToken: accessToken });
+  res.json({ message: `Hello ${user.firstName} ${user.lastName}` });
+});
+
+app.get("/");
 
 // Start the server
 app.listen(port, () => {
