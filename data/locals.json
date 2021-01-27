@@ -1,125 +1,205 @@
 [
-    {
-      "category": "Restaurants",
-      "name": "Kalimera",
+  {
+      "category": "restaurant",
+      "name": "Kalimera Kök & Bar",
       "tagline": "Grekland i Amhult",
       "img": "kalimera2019logo1_infopage.jpg",
-      "url": "https://restaurangkalimera.gastrogate.com/"
+      "street_address": "Gamla Flygplatsvägen 55",
+      "zip_code":  "423 37 Torslanda",
+      "geolocation": "57.7104749043652, 11.772397766930807",
+      "phone_number": "031-92 22 23",
+      "email": "kontakt@kalimeramezetapas.se",
+      "menu": "https://kalimeramezetapas.se/meny/",
+      "url": "https://kalimeramezetapas.se/",
     },
     {
-      "category": "Restaurants",
+      "category": "cafe",
       "name": "Green Market",
       "tagline": "Grön fika och mat i Amhult",
       "img": "Green-Market.jpeg",
+      "street_address": "Gamla Flygplatsvägen 46",
+      "zip_code": "423 37 Torslanda",
+      "geolocation":"57.71051483395212, 11.77393430556148",
+      "phone_number": "031-92 67 00",
+      "email": "malin@greenmarket.se",
       "url": "https://www.greenmarket.se"
     },
     {
-      "category": "Restaurants",
+      "category": "restaurant",
       "name": "Tilda & Josper",
       "tagline": "Grill med asiatisk touch",
       "img": "Tilda_Josper.png",
+      "street_address": "Gamla Flygplatsvägen 35",
+      "zip_code": "423 37 Torslanda",
+      "geolocation": "57.71078363161316, 11.774188651588473",
+      "phone_number": "031-92 45 40",
       "url": "https://www.tildajosper.se/"
     },
     {
-      "category": "Restaurants",
-      "name": "San Cero",
-      "tagline": "Pizza",
+      "category": "restaurant",
+      "name": "SanCero pizzeria",
+      "tagline": "Pizza i Amhult",
       "img": "SanCero-logo.jpg",
+      "street_address": "Flygfältsgatan 33",
+      "zip_code": "423 37 Torslanda",
+      "geolocation": "57.70983383678416, 11.775598482272509",
+      "phone_number": "031-92 07 07",
       "url": "http://sancero.yourpage.se/"
     },
     {
-      "category": "Restaurants",
-      "name": "Mr Thai",
+      "category": "restaurant",
+      "name": "Mr Thai Food",
       "tagline": "Thailand i Amhult",
       "img": "Mr_thai_food.jpg",
-      "url": "https://www.facebook.com/MrthaiRestaurants/"
+      "street_address": "Amhults torg 1",
+      "zip_code":"423 37 Torslanda",
+      "geolocation": "57.71024595081448, 11.773123166930798",
+      "phone_number": "031-389 03 90",
+      "online_order": "https://ujcorder.com/mtsweden/",
+      "url": "https://mrthaifood.com/"
     },
     {
-      "category": "Restaurants",
+      "category": "restaurant",
       "name": "Nya flygande korven",
       "tagline": "Klassisk korvmoj i Amhult",
       "img": "Nya flygande korven.jpeg",
-      "url": "https://www.facebook.com/flygandekorventorslanda/"
+      "street_address": "Gamla Flygplatsvägen 18",
+      "zip_code": "423 37 Torslanda",
+      "geolocation": "57.7123337125953, 11.782969636247717",
+      "phone_number": "+46 72 700 27 37",
+      "url": "https://www.nyaflygandekorven.se"
     },
     {
-      "category": "Restaurants",
+      "category": "restaurant",
       "name": "Restaurang Hörnet",
       "tagline": "Traditionell kvarterskrog i Amhult",
       "img": "restaurang_hornet_logo.png",
+      "street_address": "Gamla Flygplatsvägen 18",
+      "zip_code":"423 37 Torslanda",
+      "geolocation": "57.71130334598533, 11.78097611295835",
+      "phone_number": "031-92 14 11",
+      "email": "orahammarie@gmail.com",
+      "menu": "https://restaurang-hornet.webnode.se/meny/",
       "url": "https://restaurang-hornet.webnode.se/"
     },
     {
-      "category": "Restaurants",
+      "category": "cafe",
       "name": "Sockermajas",
-      "tagline": "Hantverksbageri med lunch på Krysset",
+      "tagline": "Bageri, godheter och hjärta på Krysset",
       "img": "sockermaja_logo.png",
+      "street_address": "Gamla flygplatsvägen 4",
+      "zip_code": "423 37 Torslanda",
+      "geolocation": "57.71421642885119, 11.783602459537391",
+      "phone_number": "+46 73 593 00 60",
       "url": "https://sockermajas.se/"
     },
     {
-      "category": "Restaurants",
+      "category": "restaurant",
       "name": "Masala Corner",
       "tagline": "Indiskt på Krysset",
       "img": "Masala corner.jpg",
+      "street_address": "Flygledarevägen 1",
+      "zip_code": "423 37 Torslanda",
+      "geolocation": "57.71415709026885, 11.782596736249069",
+      "phone_number": "031-92 19 91",
+      "email": "info@masalacorner.nu",
       "url": "https://www.masalacorner.nu/"
     },
     {
-      "category": "Restaurants",
+      "category": "restaurant",
       "name": "Torslanda Pizzeria",
       "tagline": "Pizza på Krysset",
       "img": "torslandapizzeria.jpg",
+      "street_address": "Gamla Flygplatsvägen 1",
+      "zip_code": "423 37 Torslanda",
+      "geolocation": "57.71391141627244, 11.782773228302759",
+      "phone_number": "031-92 40 10",
+      "menu": "https://torslandapizzeria.se/meny/",
       "url": "http://torslandapizzeria.se"
     },
     {
-      "category": "Restaurants",
+      "category": "restaurant",
       "name": "Torslanda Thaikök",
-      "tagline": "Thailand på torget",
+      "tagline": "Thailand på Torget",
       "img": "Torslanda Thaikok.jpg",
+      "street_address": "Torslanda torg 2",
+      "zip_code": "423 32 Torslanda",
+      "geolocation": "57.724235965010315, 11.76709469762644",
+      "phone_number": "031-56 08 99",
+      "online_order": "https://www.ujcorder.com/tt/",
       "url": "https://torslanda-thaikok.business.site/"
     },
     {
-      "category": "Restaurants",
+      "category": "restaurant",
       "name": "San Remo pizzeria",
       "tagline": "Pizza vid Krysset",
       "img": "san_remo_logo.jpg",
+      "street_address": "Nordhagsvägen 28",
+      "zip_code": "423 34 Torslanda",
+      "geolocation": "57.71598610308606, 11.781812374881271",
+      "phone_number": "031-92 31 66",
+      "online_order": "https://sanremo.se/bestall-mat",
       "url": "https://sanremo.se/"
     },
     {
-      "category": "Restaurants",
+      "category": "restaurant",
       "name": "Tsuki Hana",
       "tagline": "Japanskt möter svenskt på Krysset",
       "img": "tsuki_hana_logo.jpg",
+      "street_address": "Flygledarevägen 1",
+      "zip_code": "423 37 Torslanda",
+      "geolocation": "57.713830017199626, 11.782481551591061",
+      "phone_number": "031- 92 46 80",
+      "menu": "https://www.tsukihana.net/varmr-tter",
       "url": "https://www.tsukihana.net/"
     },
     {
-      "category": "Restaurants",
+      "category": "restaurant",
       "name": "Tommys pizzeria",
       "tagline": "Pizza på Torslanda torg",
       "img": "tommys_pizzeria.png",
+      "street_address": "Torslanda torg",
+      "zip_code": "423 32 Torslanda",
+      "geolocation": "57.72375662124198, 11.766673066941367",
+      "phone_number": "031-56 47 71",
+      "menu": "http://tommyspizzeria.se/#menu5",
       "url": "http://tommyspizzeria.se/?fbclid=IwAR28krKPYoFcWN0cJ-IlF3dHrUPxn1n7P5Q8GgncDlvlHrqHNXQ0bs-6RM4"
     },
     {
-      "category": "Restaurants",
+      "category": "restaurant",
       "name": "Lillebygrillen",
       "tagline": "Road-diner i Lilleby",
       "img": "lillebygrillen_logo.png",
+      "street_address": "Kongahällavägen",
+      "zip_code": "423 51 Torslanda",
+      "geolocation": "57.7379117673747, 11.801405797637118",
+      "phone_number": "031-56 52 52",
+      "email": "info@lillebygrillen.se",
       "url": "http://www.lillebygrillen.se/"
     },
     {
-      "category": "Restaurants",
+      "category": "cafe",
       "name": "Mjöviks bageri och gårdsbutik",
       "tagline": "Hantverksbageri i Lilleby",
       "img": "mjoviks_bageri_logo.png",
+      "street_address": "Gamla Lillebyvägen 80",
+      "zip_code": "423 53 Torslanda",
+      "geolocation": "57.74217858872147, 11.805996582298423",
+      "phone_number": "+46 70 576 41 71",
+      "email": "mia@mjoviks.se",
       "url": "http://www.mjoviks.se/"
     },
     {
-      "category": "Restaurants",
+      "category": "restaurant",
       "name": "Carls café & bistro",
       "tagline": "Oas vid havet",
       "img": "carls_cafe_logo.jpg",
+      "street_address": "Sillviksvägen 2",
+      "zip_code": "423 53 Torslanda",
       "url": "https://www.sillvik.nu/"
     },
     {
-      "category": "Restaurants",
+      "category": "restaurant",
       "name": "Vi släcker din hunger",
       "tagline": "Foodtruck från Lilleby",
       "img": "vi_slacker_din_hunger.jpg",
@@ -130,6 +210,12 @@
       "name": "I dig denim",
       "tagline": "Denim i Amhult",
       "img": "idigdenim-logo.png",
+      "street_address": "Gamla Flygplatsvägen 24",
+      "zip_code": "423 37 Torslanda",
+      "geolocation": "57.71078325059228, 11.779907903133369",
+      "phone_number": "031-92 40 70",
+      "email": "order@idigdenom.com",
+      "web_shop": "https://idigdenim.com",
       "url": "https://idigdenim.com"
     },
     {
@@ -137,6 +223,12 @@
       "name": "My Baby",
       "tagline": "Allt till bebis i Amhult",
       "img": "my_baby_logo.jpg",
+      "street_address": "Gamla Flygplatsvägen 24",
+      "zip_code": "423 37 Torslanda",
+      "geolocation": "57.7109056243027, 11.779855226422535",
+      "phone_number": "031-92 40 54",
+      "email": "butik@mybaby.se",
+      "web_shop": "https://www.mybaby.se/",
       "url": "https://www.mybaby.se/"
     },
     {
@@ -144,6 +236,11 @@
       "name": "Färgboden Torslanda",
       "tagline": "Färg tapet och inredning på Krysset",
       "img": "fargboden_torslanda_white.png",
+      "street_address": "Flygledarevägen 1",
+      "zip_code": "423 37 Torslanda",
+      "geolocation": "57.71423192858455, 11.78248180313584",
+      "phone_number": "031-92 33 85",
+      "email": "info@fargboden.se",
       "url": "https://fargboden.se/"
     },
     {
@@ -151,20 +248,36 @@
       "name": "Skin by Wihlney",
       "tagline": "Skönhet vid rececentrum",
       "img": "skinbywihlney.jpg",
-      "url": "https://www.bokadirekt.se/places/skin-by-wihlney-14033"
+      "street_address": "Fraktflyget 10",
+      "zip_code":"423 37 Torslanda",
+      "geolocation": "57.71055070775348, 11.778680987790892",
+      "email": "info@skinbywihlney.se",
+      "booking": "https://www.bokadirekt.se/places/skin-by-wihlney-14033",
+      "web_shop": "https://skinbywihlney.se/butik/",
+      "url": "https://skinbywihlney.se/"
     },
     {
       "category": "Service",
       "name": "Torslanda skomakeri",
       "tagline": "Skor och nycklar i Amhult",
       "img": "torslandaskomakeri.jpg",
-      "url": "https://www.facebook.com/awadis.asadour.96"
+      "street_address": "Gamla Flygplatsvägen 35E",
+      "zip_code": "423 37 Torslanda",
+      "geolocation": "57.71099505163472, 11.774430872448995",
+      "phone_number": "031-56 40 06",
+      "url": "https://torslandasskomakeri.se/"
     },
     {
       "category": "Service",
       "name": "Torslanda trafikskola",
       "tagline": "Körskola i Amhult",
       "img": "torslanda_trafikskola_logo_white.png",
+      "street_address": "Gamla Flygplatsvägen 4",
+      "zip_code": "423 37 Torslanda",
+      "geolocation": "57.71377198825294, 11.783982733819908",
+      "phone_number": "031-56 10 20",
+      "email": "kontoret@torslandatrafikskola.se",
+      "booking": "https://15176.str.se/e-handel/?mode=courses",
       "url": "http://www.torslandatrafikskola.se/"
     },
     {
@@ -172,6 +285,11 @@
       "name": "Vännplatsen second hand",
       "tagline": "Second hand i Torslanda",
       "img": "vannplatsen_logo.jpg",
+      "street_address": "Hangarvägen 5",
+      "zip_code": "423 37 Torslanda",
+      "geolocation": "57.71729010536801, 11.776847387795934",
+      "phone_number": "+46 70 222 70 09",
+      "email": "vannplatsen@iogt.se",
       "url": "http://www.vannplatsen.se/"
     },
     {
@@ -224,7 +342,7 @@
       "url": "https://www.begrav.se/?fbclid=IwAR3Jx8zQAGc7NvQW34nK-Oh6s6GZN2rs2i-8AxdHVBZJ-Ri5aRLiP7of45Q"
     },
     {
-      "category": "Restaurants",
+      "category": "restaurant",
       "name": "Björlanda burgan",
       "tagline": "Burgare med lokalproducerat kött",
       "img": "bjorlanda_burgan_logo.jpg",
@@ -389,7 +507,7 @@
       "name": "Gysens hundcenter",
       "tagline": "Hunddagis på Torslanda torg",
       "img": "gysens_hundcenter_logo.png",
-      "url": "http://www.gysens.se/"
+      "url": "http://www.gysenhttps://meet.google.com/ntz-yikp-xrys.se/"
     },
     {
       "category": "Groceries",

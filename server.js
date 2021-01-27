@@ -118,12 +118,9 @@ if (process.env.RESET_DATABASE) {
   populateDatabase();
 }
 
-
 app.get("/", (req, res) => {
   res.send("Hello world");
 });
-
-
 
 // User endpoints
 app.get("/users", async (req, res) => {
