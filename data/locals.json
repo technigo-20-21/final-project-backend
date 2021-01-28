@@ -10,7 +10,7 @@
       "phone_number": "031-92 22 23",
       "email": "kontakt@kalimeramezetapas.se",
       "menu": "https://kalimeramezetapas.se/meny/",
-      "url": "https://kalimeramezetapas.se/",
+      "url": "https://kalimeramezetapas.se/"
     },
     {
       "category": "cafe",
@@ -297,6 +297,10 @@
       "name": "Cinco",
       "tagline": "Kläder i Amhult",
       "img": "cinco_logo.jpg",
+      "street_address": "Flygfältsgatan 52",
+      "zip_code": "423 37 Torslanda",
+      "geolocation": "57.70957761223955, 11.774694589031649",
+      "phone_number": "031-92 15 10",
       "url": "https://www.facebook.com/CincoAmhult/"
     },
     {
@@ -304,6 +308,12 @@
       "name": "iems",
       "tagline": "Inredning i Amhult",
       "img": "iems_logo.jpg",
+      "street_address": "Flygfältsgatan 58",
+      "zip_code": "423 37 Torslanda",
+      "geolocation": "57.710058140439784, 11.773752211672795",
+      "phone_number": "031-92 04 65",
+      "email": "amhult@iems.se",
+      "web_shop": "https://iems.se/",
       "url": "https://iems.se/butiker/goteborg-torslanda/"
     },
     {
@@ -311,6 +321,11 @@
       "name": "Hemtex",
       "tagline": "Heminredning i Amhult",
       "img": "hemtex_logo.svg",
+      "street_address": "Flygfältsgatan 56",
+      "zip_code": "423 37 Torslanda",
+      "geolocation": "57.7097466156628, 11.774043425166427",
+      "phone_number": "031-92 13 46",
+      "web_shop": "https://www.hemtex.se/",
       "url": "https://www.hemtex.se/hitta-butik/goteborg-amhult/"
     },
     {
@@ -318,6 +333,11 @@
       "name": "Lindex",
       "tagline": "Kläder i Amhult",
       "img": "lindex_logo.png",
+      "street_address": "Flygfältsgatan 54",
+      "zip_code": "423 37 Torslanda",
+      "geolocation": "57.70965804736693, 11.774430698179115",
+      "phone_number": "010-452 62 13",
+      "web_shop": "https://www.lindex.com/se",
       "url": "https://www.lindex.com/se/hitta-din-butik/"
     },
     {
@@ -325,6 +345,11 @@
       "name": "Torslanda färg & tapet",
       "tagline": "Färg och tapet i Amhult",
       "img": "torslanda_farg_tapet_logo.jpeg",
+      "street_address": "Gamla Flygplatsvägen 26-28",
+      "zip_code": "423 37 Torslanda",
+      "geolocation": "57.71060953256613, 11.779996825166464",
+      "phone_number": "031-388 00 45",
+      "email": "info@torslandafarg.se",
       "url": "http://www.torslandafarg.se/"
     },
     {
@@ -332,6 +357,11 @@
       "name": "Gillis Edman begravningsbyrå",
       "tagline": "Begravningsbyrå på Torslanda torg",
       "img": "gillis_edman_torslanda.svg",
+      "street_address": "Torslanda torg 1",
+      "zip_code": "423 32 Torslanda",
+      "geolocation": "57.72345275448625, 11.767529727015262",
+      "phone_number": "031-355 40 00",
+      "email": "info@gillisedman.se",
       "url": "https://www.gillisedman.se/kontakt/torslanda/"
     },
     {
@@ -339,13 +369,23 @@
       "name": "Torslanda begravningsbyrå",
       "tagline": "Begravningsbyrå i Amhult",
       "img": "torslanda_begravningsbyra_logo.gif",
-      "url": "https://www.begrav.se/?fbclid=IwAR3Jx8zQAGc7NvQW34nK-Oh6s6GZN2rs2i-8AxdHVBZJ-Ri5aRLiP7of45Q"
+      "street_address": "Flygfältsgatan 9",
+      "zip_code": "423 37 Torslanda",
+      "geolocation": "57.71181812862386, 11.78456724871514",
+      "phone_number": "031-92 40 23",
+      "email": "info@begrav.se",
+      "url": "https://www.begrav.se/"
     },
     {
       "category": "restaurant",
       "name": "Björlanda burgan",
       "tagline": "Burgare med lokalproducerat kött",
       "img": "bjorlanda_burgan_logo.jpg",
+      "street_address": "Björlandavägen",
+      "zip_code": "423 59 Torslanda",
+      "geolocation": "57.75877116002803, 11.832104782839608",
+      "phone_number": "073-589 99 01",
+      "email": "bjorlandaburgan@gmail.com",
       "url": "https://www.facebook.com/Bjorlandaburgan/"
     },
     {
@@ -353,13 +393,35 @@
       "name": "Floristmästarna Torslanda",
       "tagline": "Professionellt binderi i Amhult",
       "img": "floristmastarna_torslanda.jpg",
+      "street_address": "Flygfältsgatan 9",
+      "zip_code": "423 37 Torslanda",
+      "geolocation": "57.71181812862386, 11.78456724871514",
+      "phone_number": "031-13 33 81",
+      "email": "info@floristmastarna.se",
       "url": "https://www.floristmastarna.se/"
     },
     {
       "category": "Beauty",
-      "name": "Apotek Hjärtat",
-      "tagline": "Apotek i Amhult och på Torslanda torg",
+      "name": "Apotek Hjärtat Amhult",
+      "tagline": "Apotek i Amhult",
       "img": "apotek_hjartat_logo.jpg",
+      "street_address": "Gamla Flygplatsvägen 60",
+      "zip_code": "423 37 Torslanda",
+      "geolocation": "57.70934661128704, 11.772706913520972",
+      "phone_number": "0771-405 405",
+      "web_shop": "https://www.apotekhjartat.se/",
+      "url": "https://www.apotekhjartat.se/hitta-apotek-hjartat/?q=torslanda"
+    },
+    {
+      "category": "Beauty",
+      "name": "Apotek Hjärtat Torslanda torg",
+      "tagline": "Apotek på Torslanda torg",
+      "img": "apotek_hjartat_logo.jpg",
+      "street_address": "Torslanda torg 3",
+      "zip_code": "423 32 Torslanda",
+      "geolocation": "57.7233757719704, 11.767026311673435",
+      "phone_number": "0771-405 405",
+      "web_shop": "https://www.apotekhjartat.se/",
       "url": "https://www.apotekhjartat.se/hitta-apotek-hjartat/?q=torslanda"
     },
     {
@@ -367,6 +429,11 @@
       "name": "Kronans Apotek",
       "tagline": "Apotek i Amhult",
       "img": "kronans_apotek_logo.png",
+      "street_address": "Gamla Flygplatsvägen 40",
+      "zip_code": "423 37 Torslanda",
+      "geolocation": "57.710066677604736, 11.774632855850065",
+      "phone_number": "0771-612 612",
+      "web_shop": "https://www.kronansapotek.se/",
       "url": "https://www.kronansapotek.se/store/Kronans%20Apotek%20Torslanda"
     },
     {
@@ -374,6 +441,13 @@
       "name": "Hälsokraft Torslanda",
       "tagline": "Hälsokost i Amhult",
       "img": "halsokraft_logo.png",
+      "street_address": "Gamla Flygplatsvägen 46",
+      "zip_code": "423 37 Torslanda",
+      "geolocation": "57.71009426592659, 11.774114727014597",
+      "phone_number": "031-92 04 10",
+      "email": "torslanda@halsokraft.se",
+      "booking": "https://www.bokadirekt.se/places/h%C3%A4lsokraft-torslanda-16139",
+      "web_shop": "https://halsokraft.se/",
       "url": "https://www.facebook.com/halsokrafttorslanda/?ref=page_internal"
     },
     {
@@ -381,13 +455,24 @@
       "name": "Bling bling spa",
       "tagline": "Fixa naglar och fransar på Torslanda torg",
       "img": "bling_bling_spa_logo.jpg",
+      "street_address": "Torslanda torg 1",
+      "zip_code":"423 32 Torslanda",
+      "geolocation": "57.72362846036479, 11.767157150109828",
+      "phone_number": "0706-39 07 56",
+      "email": "blingspatorslanda@gmail.com",
+      "booking": "https://www.bokadirekt.se/places/bling-bling-spa-20842",
       "url": "https://www.facebook.com/blingspanailsfransar/about/?ref=page_internal"
     },
     {
       "category": "Beauty",
-      "name": "First lady spa",
+      "name": "First Lady",
       "tagline": "Skönhet i Björlanda eller på plats",
       "img": "first_lady_logo.png",
+      "street_address": "Stallvägen 57",
+      "zip_code": "423 55 Torslanda",
+      "geolocation": "57.7541970204442, 11.820852627016668",
+      "email": "annika@firstlady.se",
+      "booking": "https://www.bokadirekt.se/places/first-lady-14551",
       "url": "https://firstlady.se/"
     },
     {
@@ -395,6 +480,11 @@
       "name": "Meddo solarium",
       "tagline": "Sola på Torslanda torg",
       "img": "meddo_solarium_logo.png",
+      "street_address": "Torslanda torg 3",
+      "zip_code": "423 32 Torslanda",
+      "geolocation": "57.72339983750486, 11.766866327015256",
+      "phone_number": "073-525 57 58",
+      "booking": "https://sunapp.repayal.com/",
       "url": "https://www.facebook.com/MeddoTorslanda/"
     },
     {
@@ -402,6 +492,12 @@
       "name": "Shiatsurummet",
       "tagline": "Japansk massage på Torslanda torg",
       "img": "shiatsurummet_logo.jpeg",
+      "street_address": "Torslanda torg 1",
+      "zip_code": "423 32 Torslanda",
+      "geolocation": "57.723617495366504, 11.767320455850701",
+      "phone_number": "0706-28 55 04",
+      "email": "shiatsurummet@gmail.com",
+      "booking": "https://www.bokadirekt.se/places/shiatsurummet--12539",
       "url": "https://shiatsurummet.se/"
     },
     {
@@ -409,14 +505,36 @@
       "name": "Friskis&Svettis",
       "tagline": "Träning i Amhult",
       "img": "friskissvettis.png",
+      "street_address": "Postflyget 4",
+      "zip_code": "423 37 Torslanda",
+      "geolocation": "57.70863822376895, 11.778304440508183",
+      "phone_number": "031-723 56 55",
+      "booking": "https://onlinebokning.pastelldata.com/1000/",
       "url": "https://www.friskissvettis.se/Goteborg/Harfinnsvi/Torslanda"
     },
     {
       "category": "Beauty",
       "name": "Nordic Wellness",
-      "tagline": "Träna i Amhult eller Torslanda torg",
+      "tagline": "Träna i Amhult",
       "img": "nordicwellness_logo.svg",
+      "street_address": "Gamla Flygplatsvägen 26",
+      "zip_code": "423 37 Torslanda",
+      "geolocation": "57.71019492619084, 11.780390727014598",
+      "phone_number": "010-155 52 86",
+      "email": "torslanda@nordicwellness.se",
       "url": "https://nordicwellness.se/vara-klubbar/goteborg/torslanda-amhult/"
+    },
+    {
+      "category": "Beauty",
+      "name": "Nordic Wellness",
+      "tagline": "Träna på Torslanda torg",
+      "img": "nordicwellness_logo.svg",
+      "street_address": "Torslanda torg 1",
+      "zip_code": "423 32 Torslanda",
+      "geolocation": "57.72363468308247, 11.767309727015249",
+      "phone_number": "010-155 52 72",
+      "email": "torslanda.torg@nordicwellness.se",
+      "url": "https://nordicwellness.se/vara-klubbar/goteborg/torslanda-torg/"
     },
     {
       "category": "Beauty",
@@ -430,6 +548,10 @@
       "name": "Salong Aquarius",
       "tagline": "Frisör vid Krysset",
       "img": "aquarius_logo.jpg",
+      "street_address": "Gamla Flygplatsvägen 4",
+      "zip_code": "423 37 Torslanda",
+      "geolocation": "57.71342269100402, 11.783789640508422",
+      "phone_number": "031-92 05 25",
       "url": "https://www.facebook.com/salongaquarius"
     },
     {
@@ -437,6 +559,11 @@
       "name": "Klippa Torslanda",
       "tagline": "Frisör i Amhult",
       "img": "klippa_logo.jpg",
+      "street_address": "Amhultsvägen 3",
+      "zip_code": "423 37 Torslanda",
+      "geolocation": "57.71048389572712, 11.773628484685531",
+      "phone_number": "031-92 03 10",
+      "booking": "https://boka.itsperfect.se/25084612/Kund/Loggain?ReturnUrl=%2F25084612",
       "url": "https://klippa.nu/salonger/torslanda/"
     },
     {
@@ -444,6 +571,12 @@
       "name": "Klipperian Torslanda",
       "tagline": "Frisör på Torslanda torg",
       "img": "klipperian_logo.jpg",
+      "street_address": "Torslanda torg 1",
+      "zip_code": "423 32 Torslanda",
+      "geolocation": "57.72358884915506, 11.767331184686164",
+      "phone_number": "031-56 48 17",
+      "email": "nyaklipperian@yahoo.se",
+      "booking": "https://boka.hitta.se/salong/klipperian/1207",
       "url": "https://www.facebook.com/klipperiantorslanda/"
     },
     {
@@ -451,6 +584,11 @@
       "name": "Klippotek Dandy",
       "tagline": "Frisör i Amhult",
       "img": "logotyp_klippotek_dandy_dark_background.svg",
+      "street_address": "Gamla Flygplatsvägen 35",
+      "zip_code": "423 37 Torslanda",
+      "geolocation": "57.71029077103582, 11.774591240508242",
+      "phone_number": "031-788 92 92",
+      "booking": "https://boka.hitta.se/salong/klippotek-dandy/1061",
       "url": "http://klippotekdandy.se/salonger/torslanda/"
     },
     {
