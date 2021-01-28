@@ -35,12 +35,12 @@ const storage = cloudinaryStorage({
 const parser = multer({ storage });
 
 const userSchema = new mongoose.Schema({
-  firstname: {
+  firstName: {
     type: String,
     required: [true, "Name is required"],
     minlength: [2, "Use a minimum of 2 characters"],
   },
-  lastname: {
+  lastName: {
     type: String,
     required: [true, "Name is required"],
     minlength: [2, "Use a minimum of 2 characters"],
@@ -147,10 +147,10 @@ app.get("/users", async (req, res) => {
 // Endpoint for signing up user
 app.post("/users", async (req, res) => {
   try {
-    const { firstname, lastname, email, password } = req.body;
-    const newUser = new User({ firstname, lastname, email, password });
+    const { firstName, lastName, email, password } = req.body;
+    const newUser = new User({ firstName, lastName, email, password });
     await newUser.save();
-    res.status(200).json({ id: newUser._id, accessToken: newUser.accessToken });
+    res.status(200).json({ id: newUser._id, accessToken: newUser.accessToken, firstName: newUser.lastName, lastName: newUser.lastName });
   } catch (err) {
     res.status(400).json({ message: "Could not create user.", errors: err });
   }
@@ -163,8 +163,8 @@ app.post("/sessions", async (req, res) => {
     res.json({
       id: user._id,
       accessToken: user.accessToken,
-      firstname: user.firstname,
-      lastname: user.lastname,
+      firstName: user.firstName,
+      lastName: user.lastName,
     });
   } else {
     res.status(400).json({
