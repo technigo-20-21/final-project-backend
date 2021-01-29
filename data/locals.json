@@ -596,6 +596,12 @@
       "name": "Blomsterlandet",
       "tagline": "Handelsträdgård i Amhult",
       "img": "blomsterlandet_logo.jpg",
+      "street_address": "Flygfältsgatan 34",
+      "zip_code": "423 37 Torslanda",
+      "geolocation": "57.70973976601238, 11.783141450925429",
+      "phone_number": "031-388 60 00",
+      "email": "torslanda@blomsterlandet.se",
+      "web_shop": "https://www.blomsterlandet.se/",
       "url": "https://www.blomsterlandet.se/hitta-din-butik/torslanda/"
     },
     {
@@ -603,6 +609,11 @@
       "name": "Malms väskor",
       "tagline": "Väskor i Amhult",
       "img": "malms_vaskor_logo.jpg",
+      "street_address": "Gamla Flygplatsvägen 52",
+      "zip_code": "423 37 Torslanda",
+      "geolocation": "57.71001038884916, 11.773051102692985",
+      "phone_number": "031-56 41 42",
+      "email": "info@malmsvaskor.se",
       "url": "http://malmsvaskor.se/2.html"
     },
     {
@@ -610,6 +621,10 @@
       "name": "Torslanda Blomsterhandel",
       "tagline": "Florist på Torslanda torg",
       "img": "torslanda_blomsterhandel_logo.jpg",
+      "street_address": "Torslanda torg 6",
+      "zip_code": "423 32 Torslanda",
+      "geolocation": "57.72374161201119, 11.766773255942365",
+      "phone_number": "031-56 15 58",
       "url": "https://www.facebook.com/pages/category/Florist/Torslanda-Blomsterhandel-AB-107865215948388/"
     },
     {
@@ -617,6 +632,11 @@
       "name": "Torslanda djurbutik veterinärfoder",
       "tagline": "Djurbutik i Amhult",
       "img": "torslanda_djurbutik_veterinarfoder_logo.jpg",
+      "street_address": "Gamla Flygplatsvägen 18",
+      "zip_code": "423 37 Torslanda",
+      "geolocation": "57.71046135713694, 11.780447810716092",
+      "phone_number": "031-92 00 54",
+      "email": "info@torslandadjurbutik.se",
       "url": "https://www.torslandadjurbutik.se/"
     },
     {
@@ -624,6 +644,12 @@
       "name": "Elon Torslanda",
       "tagline": "Vitvaror och annat till hemmet vid resecentrum",
       "img": "elon_logo.png",
+      "street_address": "Postflyget 13",
+      "zip_code": "423 37 Torslanda",
+      "geolocation": "57.70937694826014, 11.779725611762514",
+      "phone_number": "031-795 00 08",
+      "email": "torslanda.friggahuset@elon.se",
+      "web_shop": "https://www.elon.se/",
       "url": "https://www.elon.se/butiker/torslanda/elon-friggahuset-torslanda"
     },
     {
@@ -631,6 +657,11 @@
       "name": "Byggmax Torslanda",
       "tagline": "Bygghandel vid Krysset",
       "img": "byggmax_torslanda.svg",
+      "street_address": "Gamla Flygplatsvägen 4",
+      "zip_code": "423 37 Torslanda",
+      "geolocation": "57.713465983546826, 11.78393472710605",
+      "phone_number": "0771-89 00 89",
+      "web_shop": "https://www.byggmax.se/",
       "url": "https://www.byggmax.se/butiker/gbg-torslanda"
     },
     {
@@ -638,6 +669,10 @@
       "name": "Mobilkliniken",
       "tagline": "Fixar mobil/platta på Torslanda torg",
       "img": "mobilkliniken_logo.jpg",
+      "street_address": "Torslanda torg 3A",
+      "zip_code": "423 32 Torslanda",
+      "geolocation": "57.72318122623783, 11.766955184778196",
+      "phone_number": "0762-40 62 40",
       "url": "https://www.facebook.com/MobilKliniken.T/"
     },
     {
@@ -645,6 +680,9 @@
       "name": "Gysens hundcenter",
       "tagline": "Hunddagis på Torslanda torg",
       "img": "gysens_hundcenter_logo.png",
+      "street_address": "Torslanda torg 3",
+      "zip_code": "423 32 Torslanda",
+      "geolocation": "57.72337119121347, 11.76684486943486",
       "url": "http://www.gysenhttps://meet.google.com/ntz-yikp-xrys.se/"
     },
     {
@@ -652,6 +690,10 @@
       "name": "Godishuset",
       "tagline": "Godis i centrala Torslanda",
       "img": "godishuset_logo.jpg",
+      "street_address": "Vildkaprifolen 5",
+      "zip_code": "423 33 Torslanda",
+      "geolocation": "57.72112886303996, 11.769413182927199",
+      "phone_number": "031-56 12 20",
       "url": "https://godis-huset.business.site/"
     },
     {
@@ -666,6 +708,11 @@
       "name": "Hemköp",
       "tagline": "Livsmedel på Torget",
       "img": "hemkop_logo.jpeg",
+      "street_address": "Torslanda torg",
+      "zip_code": "423 32 Torslanda",
+      "geolocation": "57.72394308649705, 11.766956711763186",
+      "phone_number": "031-56 76 40",
+      "web_shop":"https://www.hemkop.se/butik/4792",
       "url": "https://www.hemkop.se/butik/4792?gclsrc=aw.ds&gclsrc=aw.ds&gclid=CjwKCAjwhOD0BRAQEiwAK7JHmANmzp9uZKA1SCpeDaZmMNPHNefYyK-r824u38UXs6vBgsPk_HIKCBoCRDUQAvD_BwE"
     },
     {
@@ -673,6 +720,12 @@
       "name": "Ica Maxi",
       "tagline": "Stormarknad i Amhult",
       "img": "ica_maxi_torslanda_logo.png",
+      "street_address": "Gamla Flygplatsvägen 60",
+      "zip_code": "423 37 Torslanda",
+      "geolocation": "57.709629473431015, 11.772331898270046",
+      "phone_number": "031-720 56 00",
+      "email": "kundkontakt.torslanda@maxi.ica.se",
+      "web_shop": "https://www.ica.se/handla/maxi-ica-stormarknad-torslanda-id_11601/",
       "url": "https://www.ica.se/butiker/maxi/goteborg/maxi-ica-stormarknad-torslanda-11601/start/"
     },
     {
@@ -680,6 +733,10 @@
       "name": "Ica Nära",
       "tagline": "Livsmedel i Björlanda",
       "img": "ica-nara-logotyp.png",
+      "street_address": "Linas lycka 2",
+      "zip_code": "423 59 Torslanda",
+      "geolocation": "57.75947865263852, 11.832472084779875",
+      "phone_number": "031-92 52 95",
       "url": "https://www.ica.se/butiker/nara/goteborg/ica-nara-bjorlanda-16621/start/?gclid=Cj0KCQjws_r0BRCwARIsAMxfDRgHJib6Ty59kQB4UMsKYHn9RfVOuEHwYlU-EZ5arexJEma3sW33WT8aAtw7EALw_wcB"
     },
     {
@@ -694,6 +751,10 @@
       "name": "Willys Hemma",
       "tagline": "Livsmedel på Runskriftsgatan",
       "img": "willys_hemma_logo.png",
+      "street_address": "Runskriftsgatan 1",
+      "zip_code": "423 47 Torslanda",
+      "geolocation": "57.735363794392576, 11.770212159940007",
+      "phone_number": "031-315 01 70",
       "url": "https://www.willys.se/butik/2855"
     },
     {
@@ -701,6 +762,10 @@
       "name": "Torslanda fisk",
       "tagline": "Havets delikatesser på Torslanda torg",
       "img": "torslanda_fisk_logo.png",
+      "street_address": "Torslanda torg 1",
+      "zip_code": "423 32 Torslanda",
+      "geolocation": "57.723737795058966, 11.767167298270698",
+      "phone_number": "031-56 48 90",
       "url": "http://www.torslandafisk.se/"
     },
     {
@@ -708,6 +773,10 @@
       "name": "Torslanda frukthall",
       "tagline": "Frukt å grönt på Torslanda torg",
       "img": "torslanda_frukthall_logo.jpg",
+      "street_address": "Torslanda torg 2",
+      "zip_code": "423 32 Torslanda",
+      "geolocation": "57.72363221988583, 11.766911069434874",
+      "phone_number": "031-56 24 10",
       "url": "https://www.facebook.com/torslandafrukthall"
     },
     {
@@ -715,6 +784,10 @@
       "name": "Björlanda Fisk och skaldjur",
       "tagline": "Havets delikatesser i Björlanda",
       "img": "bjorlanda_fisk_skaldjur_logo.jpg",
+      "street_address": "Linas lycka 6",
+      "zip_code": "423 59 Torslanda",
+      "geolocation": "57.75919437716396, 11.832072540600697",
+      "phone_number": "031-92 50 40",
       "url": "http://bjorlandafisk.se/index.html"
     },
     {
@@ -722,6 +795,10 @@
       "name": "Åkes hönökaka",
       "tagline": "Bräckbod vid Krysset",
       "img": "akes_honokaka_logo.png",
+      "street_address": "Nordhagsvägen 16",
+      "zip_code": "423 34 Torslanda",
+      "geolocation": "57.7172885862374, 11.77898535594207",
+      "phone_number": "031-92 36 20",
       "url": "http://www.honokaka.se/kontakt/oppettider"
     },
     {
@@ -729,6 +806,8 @@
       "name": "Topskills",
       "tagline": "Coachning och Digitalisering vid Krysset",
       "img": "topskills_logo.jpg",
+      "phone_number": "0768-977 666",
+      "email": "info@topskills.se",
       "url": "https://topskills.se"
     }
   ]
