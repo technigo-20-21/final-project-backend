@@ -103,7 +103,8 @@ const authenticateUser = async (req, res, next) => {
 }
 
 const LocalCategory = new mongoose.model('LocalCategory',{
-  category: String
+  category: String,
+  display_name: String
 })
 
 const port = process.env.PORT || 8080;

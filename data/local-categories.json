@@ -1,20 +1,26 @@
 [
     {
-        "category": "restaurant"
+        "category": "restaurant",
+        "display_name": "Äta ute"
     },
     {
-        "category": "cafe"
+        "category": "cafe",
+        "display_name": "Fika"
     },
     {
-        "category": "groceries"
+        "category": "groceries",
+        "display_name": "Mat & Götta"
     },
     {
-        "category": "shopping"
+        "category": "shopping",
+        "display_name": "Shoppa"
     },
     {
-        "category": "beauty"
+        "category": "beauty",
+        "display_name": "Hälsa & Skönhet"
     },
     {
-        "category": "service"
+        "category": "service",
+        "display_name": "Service"
     }
 ]
