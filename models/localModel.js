@@ -4,7 +4,8 @@ const Schema = mongoose.Schema;
 
 const localSchema = new Schema({
     category: {
-        type: String,
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'LocalCategory'
     },
     name: {
         type: String,
@@ -47,6 +48,5 @@ const localSchema = new Schema({
         type: String,
     }
 });
-
 const Local = mongoose.model("Local", localSchema);
 module.exports = Local;
