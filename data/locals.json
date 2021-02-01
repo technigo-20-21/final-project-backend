@@ -6,7 +6,7 @@
       "img": "kalimera2019logo1_infopage.jpg",
       "street_address": "Gamla Flygplatsvägen 55",
       "zip_code":  "423 37 Torslanda",
-      "geolocation": "57.7104749043652, 11.772397766930807",
+      "geolocation": { "coordinates": [57.7104749043652, 11.772397766930807] },
       "phone_number": "031-92 22 23",
       "email": "kontakt@kalimeramezetapas.se",
       "menu": "https://kalimeramezetapas.se/meny/",
@@ -19,7 +19,7 @@
       "img": "Green-Market.jpeg",
       "street_address": "Gamla Flygplatsvägen 46",
       "zip_code": "423 37 Torslanda",
-      "geolocation":"57.71051483395212, 11.77393430556148",
+      "geolocation": { "coordinates": [57.71051483395212, 11.77393430556148] },
       "phone_number": "031-92 67 00",
       "email": "malin@greenmarket.se",
       "url": "https://www.greenmarket.se"
@@ -31,7 +31,7 @@
       "img": "Tilda_Josper.png",
       "street_address": "Gamla Flygplatsvägen 35",
       "zip_code": "423 37 Torslanda",
-      "geolocation": "57.71078363161316, 11.774188651588473",
+      "geolocation": { "coordinates": [57.71078363161316, 11.774188651588473] },
       "phone_number": "031-92 45 40",
       "url": "https://www.tildajosper.se/"
     },
@@ -42,7 +42,7 @@
       "img": "SanCero-logo.jpg",
       "street_address": "Flygfältsgatan 33",
       "zip_code": "423 37 Torslanda",
-      "geolocation": "57.70983383678416, 11.775598482272509",
+      "geolocation": { "coordinates": [57.70983383678416, 11.775598482272509] },
       "phone_number": "031-92 07 07",
       "url": "http://sancero.yourpage.se/"
     },
@@ -53,7 +53,7 @@
       "img": "Mr_thai_food.jpg",
       "street_address": "Amhults torg 1",
       "zip_code":"423 37 Torslanda",
-      "geolocation": "57.71024595081448, 11.773123166930798",
+      "geolocation": { "coordinates": [57.71024595081448, 11.773123166930798] },
       "phone_number": "031-389 03 90",
       "online_order": "https://ujcorder.com/mtsweden/",
       "url": "https://mrthaifood.com/"
@@ -65,7 +65,7 @@
       "img": "Nya flygande korven.jpeg",
       "street_address": "Gamla Flygplatsvägen 18",
       "zip_code": "423 37 Torslanda",
-      "geolocation": "57.7123337125953, 11.782969636247717",
+      "geolocation": { "coordinates": [57.7123337125953, 11.782969636247717]},
       "phone_number": "+46 72 700 27 37",
       "url": "https://www.nyaflygandekorven.se"
     },
@@ -76,7 +76,7 @@
       "img": "restaurang_hornet_logo.png",
       "street_address": "Gamla Flygplatsvägen 18",
       "zip_code":"423 37 Torslanda",
-      "geolocation": "57.71130334598533, 11.78097611295835",
+      "geolocation": { "coordinates": [57.71130334598533, 11.78097611295835] },
       "phone_number": "031-92 14 11",
       "email": "orahammarie@gmail.com",
       "menu": "https://restaurang-hornet.webnode.se/meny/",
@@ -89,7 +89,7 @@
       "img": "sockermaja_logo.png",
       "street_address": "Gamla flygplatsvägen 4",
       "zip_code": "423 37 Torslanda",
-      "geolocation": "57.71421642885119, 11.783602459537391",
+      "geolocation": { "coordinates": [57.71421642885119, 11.783602459537391]},
       "phone_number": "+46 73 593 00 60",
       "url": "https://sockermajas.se/"
     },
@@ -100,7 +100,7 @@
       "img": "Masala corner.jpg",
       "street_address": "Flygledarevägen 1",
       "zip_code": "423 37 Torslanda",
-      "geolocation": "57.71415709026885, 11.782596736249069",
+      "geolocation": { "coordinates": [57.71415709026885, 11.782596736249069]},
       "phone_number": "031-92 19 91",
       "email": "info@masalacorner.nu",
       "url": "https://www.masalacorner.nu/"
@@ -112,7 +112,7 @@
       "img": "torslandapizzeria.jpg",
       "street_address": "Gamla Flygplatsvägen 1",
       "zip_code": "423 37 Torslanda",
-      "geolocation": "57.71391141627244, 11.782773228302759",
+      "geolocation": { "coordinates": [57.71391141627244, 11.782773228302759] },
       "phone_number": "031-92 40 10",
       "menu": "https://torslandapizzeria.se/meny/",
       "url": "http://torslandapizzeria.se"
@@ -124,7 +124,7 @@
       "img": "Torslanda Thaikok.jpg",
       "street_address": "Torslanda torg 2",
       "zip_code": "423 32 Torslanda",
-      "geolocation": "57.724235965010315, 11.76709469762644",
+      "geolocation": { "coordinates": [57.724235965010315, 11.76709469762644] },
       "phone_number": "031-56 08 99",
       "online_order": "https://www.ujcorder.com/tt/",
       "url": "https://torslanda-thaikok.business.site/"
@@ -136,7 +136,7 @@
       "img": "san_remo_logo.jpg",
       "street_address": "Nordhagsvägen 28",
       "zip_code": "423 34 Torslanda",
-      "geolocation": "57.71598610308606, 11.781812374881271",
+      "geolocation": { "coordinates": [57.71598610308606, 11.781812374881271]},
       "phone_number": "031-92 31 66",
       "online_order": "https://sanremo.se/bestall-mat",
       "url": "https://sanremo.se/"
@@ -148,7 +148,8 @@
       "img": "tsuki_hana_logo.jpg",
       "street_address": "Flygledarevägen 1",
       "zip_code": "423 37 Torslanda",
-      "geolocation": "57.713830017199626, 11.782481551591061",
+      "geolocation": {
+        "coordinates": [57.713830017199626, 11.782481551591061]},
       "phone_number": "031- 92 46 80",
       "menu": "https://www.tsukihana.net/varmr-tter",
       "url": "https://www.tsukihana.net/"
@@ -160,7 +161,7 @@
       "img": "tommys_pizzeria.png",
       "street_address": "Torslanda torg",
       "zip_code": "423 32 Torslanda",
-      "geolocation": "57.72375662124198, 11.766673066941367",
+      "geolocation": { "coordinates": [57.72375662124198, 11.766673066941367]},
       "phone_number": "031-56 47 71",
       "menu": "http://tommyspizzeria.se/#menu5",
       "url": "http://tommyspizzeria.se/?fbclid=IwAR28krKPYoFcWN0cJ-IlF3dHrUPxn1n7P5Q8GgncDlvlHrqHNXQ0bs-6RM4"
@@ -172,7 +173,7 @@
       "img": "lillebygrillen_logo.png",
       "street_address": "Kongahällavägen",
       "zip_code": "423 51 Torslanda",
-      "geolocation": "57.7379117673747, 11.801405797637118",
+      "geolocation": { "coordinates": [57.7379117673747, 11.801405797637118]},
       "phone_number": "031-56 52 52",
       "email": "info@lillebygrillen.se",
       "url": "http://www.lillebygrillen.se/"
@@ -184,7 +185,7 @@
       "img": "mjoviks_bageri_logo.png",
       "street_address": "Gamla Lillebyvägen 80",
       "zip_code": "423 53 Torslanda",
-      "geolocation": "57.74217858872147, 11.805996582298423",
+      "geolocation": { "coordinates": [57.74217858872147, 11.805996582298423] },
       "phone_number": "+46 70 576 41 71",
       "email": "mia@mjoviks.se",
       "url": "http://www.mjoviks.se/"
@@ -212,7 +213,7 @@
       "img": "idigdenim-logo.png",
       "street_address": "Gamla Flygplatsvägen 24",
       "zip_code": "423 37 Torslanda",
-      "geolocation": "57.71078325059228, 11.779907903133369",
+      "geolocation": { "coordinates": [57.71078325059228, 11.779907903133369] },
       "phone_number": "031-92 40 70",
       "email": "order@idigdenom.com",
       "web_shop": "https://idigdenim.com",
@@ -225,7 +226,7 @@
       "img": "my_baby_logo.jpg",
       "street_address": "Gamla Flygplatsvägen 24",
       "zip_code": "423 37 Torslanda",
-      "geolocation": "57.7109056243027, 11.779855226422535",
+      "geolocation": { "coordinates": [57.7109056243027, 11.779855226422535] },
       "phone_number": "031-92 40 54",
       "email": "butik@mybaby.se",
       "web_shop": "https://www.mybaby.se/",
@@ -238,7 +239,7 @@
       "img": "fargboden_torslanda_white.png",
       "street_address": "Flygledarevägen 1",
       "zip_code": "423 37 Torslanda",
-      "geolocation": "57.71423192858455, 11.78248180313584",
+      "geolocation": { "coordinates": [57.71423192858455, 11.78248180313584] },
       "phone_number": "031-92 33 85",
       "email": "info@fargboden.se",
       "url": "https://fargboden.se/"
@@ -250,7 +251,7 @@
       "img": "skinbywihlney.jpg",
       "street_address": "Fraktflyget 10",
       "zip_code":"423 37 Torslanda",
-      "geolocation": "57.71055070775348, 11.778680987790892",
+      "geolocation": { "coordinates": [57.71055070775348, 11.778680987790892] },
       "email": "info@skinbywihlney.se",
       "booking": "https://www.bokadirekt.se/places/skin-by-wihlney-14033",
       "web_shop": "https://skinbywihlney.se/butik/",
@@ -263,7 +264,7 @@
       "img": "torslandaskomakeri.jpg",
       "street_address": "Gamla Flygplatsvägen 35E",
       "zip_code": "423 37 Torslanda",
-      "geolocation": "57.71099505163472, 11.774430872448995",
+      "geolocation": { "coordinates": [57.71099505163472, 11.774430872448995] },
       "phone_number": "031-56 40 06",
       "url": "https://torslandasskomakeri.se/"
     },
@@ -274,7 +275,7 @@
       "img": "torslanda_trafikskola_logo_white.png",
       "street_address": "Gamla Flygplatsvägen 4",
       "zip_code": "423 37 Torslanda",
-      "geolocation": "57.71377198825294, 11.783982733819908",
+      "geolocation": { "coordinates": [57.71377198825294, 11.783982733819908] },
       "phone_number": "031-56 10 20",
       "email": "kontoret@torslandatrafikskola.se",
       "booking": "https://15176.str.se/e-handel/?mode=courses",
@@ -287,7 +288,7 @@
       "img": "vannplatsen_logo.jpg",
       "street_address": "Hangarvägen 5",
       "zip_code": "423 37 Torslanda",
-      "geolocation": "57.71729010536801, 11.776847387795934",
+      "geolocation": { "coordinates": [57.71729010536801, 11.776847387795934] },
       "phone_number": "+46 70 222 70 09",
       "email": "vannplatsen@iogt.se",
       "url": "http://www.vannplatsen.se/"
@@ -299,7 +300,7 @@
       "img": "cinco_logo.jpg",
       "street_address": "Flygfältsgatan 52",
       "zip_code": "423 37 Torslanda",
-      "geolocation": "57.70957761223955, 11.774694589031649",
+      "geolocation": { "coordinates": [57.70957761223955, 11.774694589031649] },
       "phone_number": "031-92 15 10",
       "url": "https://www.facebook.com/CincoAmhult/"
     },
@@ -310,7 +311,7 @@
       "img": "iems_logo.jpg",
       "street_address": "Flygfältsgatan 58",
       "zip_code": "423 37 Torslanda",
-      "geolocation": "57.710058140439784, 11.773752211672795",
+      "geolocation": { "coordinates": [57.710058140439784, 11.773752211672795] },
       "phone_number": "031-92 04 65",
       "email": "amhult@iems.se",
       "web_shop": "https://iems.se/",
@@ -323,7 +324,7 @@
       "img": "hemtex_logo.svg",
       "street_address": "Flygfältsgatan 56",
       "zip_code": "423 37 Torslanda",
-      "geolocation": "57.7097466156628, 11.774043425166427",
+      "geolocation": { "coordinates": [57.7097466156628, 11.774043425166427] },
       "phone_number": "031-92 13 46",
       "web_shop": "https://www.hemtex.se/",
       "url": "https://www.hemtex.se/hitta-butik/goteborg-amhult/"
@@ -335,7 +336,7 @@
       "img": "lindex_logo.png",
       "street_address": "Flygfältsgatan 54",
       "zip_code": "423 37 Torslanda",
-      "geolocation": "57.70965804736693, 11.774430698179115",
+      "geolocation": { "coordinates": [57.70965804736693, 11.774430698179115] },
       "phone_number": "010-452 62 13",
       "web_shop": "https://www.lindex.com/se",
       "url": "https://www.lindex.com/se/hitta-din-butik/"
@@ -347,7 +348,7 @@
       "img": "torslanda_farg_tapet_logo.jpeg",
       "street_address": "Gamla Flygplatsvägen 26-28",
       "zip_code": "423 37 Torslanda",
-      "geolocation": "57.71060953256613, 11.779996825166464",
+      "geolocation": { "coordinates": [57.71060953256613, 11.779996825166464] },
       "phone_number": "031-388 00 45",
       "email": "info@torslandafarg.se",
       "url": "http://www.torslandafarg.se/"
@@ -359,7 +360,7 @@
       "img": "gillis_edman_torslanda.svg",
       "street_address": "Torslanda torg 1",
       "zip_code": "423 32 Torslanda",
-      "geolocation": "57.72345275448625, 11.767529727015262",
+      "geolocation": { "coordinates": [57.72345275448625, 11.767529727015262] },
       "phone_number": "031-355 40 00",
       "email": "info@gillisedman.se",
       "url": "https://www.gillisedman.se/kontakt/torslanda/"
@@ -371,7 +372,7 @@
       "img": "torslanda_begravningsbyra_logo.gif",
       "street_address": "Flygfältsgatan 9",
       "zip_code": "423 37 Torslanda",
-      "geolocation": "57.71181812862386, 11.78456724871514",
+      "geolocation": { "coordinates": [57.71181812862386, 11.78456724871514] },
       "phone_number": "031-92 40 23",
       "email": "info@begrav.se",
       "url": "https://www.begrav.se/"
@@ -383,7 +384,7 @@
       "img": "bjorlanda_burgan_logo.jpg",
       "street_address": "Björlandavägen",
       "zip_code": "423 59 Torslanda",
-      "geolocation": "57.75877116002803, 11.832104782839608",
+      "geolocation": { "coordinates": [57.75877116002803, 11.832104782839608] },
       "phone_number": "073-589 99 01",
       "email": "bjorlandaburgan@gmail.com",
       "url": "https://www.facebook.com/Bjorlandaburgan/"
@@ -395,7 +396,7 @@
       "img": "floristmastarna_torslanda.jpg",
       "street_address": "Flygfältsgatan 9",
       "zip_code": "423 37 Torslanda",
-      "geolocation": "57.71181812862386, 11.78456724871514",
+      "geolocation": { "coordinates": [57.71181812862386, 11.78456724871514] },
       "phone_number": "031-13 33 81",
       "email": "info@floristmastarna.se",
       "url": "https://www.floristmastarna.se/"
@@ -407,7 +408,7 @@
       "img": "apotek_hjartat_logo.jpg",
       "street_address": "Gamla Flygplatsvägen 60",
       "zip_code": "423 37 Torslanda",
-      "geolocation": "57.70934661128704, 11.772706913520972",
+      "geolocation": { "coordinates": [57.70934661128704, 11.772706913520972] },
       "phone_number": "0771-405 405",
       "web_shop": "https://www.apotekhjartat.se/",
       "url": "https://www.apotekhjartat.se/hitta-apotek-hjartat/?q=torslanda"
@@ -443,7 +444,7 @@
       "img": "halsokraft_logo.png",
       "street_address": "Gamla Flygplatsvägen 46",
       "zip_code": "423 37 Torslanda",
-      "geolocation": "57.71009426592659, 11.774114727014597",
+      "geolocation": { "coordinates": [57.71009426592659, 11.774114727014597] },
       "phone_number": "031-92 04 10",
       "email": "torslanda@halsokraft.se",
       "booking": "https://www.bokadirekt.se/places/h%C3%A4lsokraft-torslanda-16139",
@@ -457,7 +458,7 @@
       "img": "bling_bling_spa_logo.jpg",
       "street_address": "Torslanda torg 1",
       "zip_code":"423 32 Torslanda",
-      "geolocation": "57.72362846036479, 11.767157150109828",
+      "geolocation": { "coordinates": [57.72362846036479, 11.767157150109828] },
       "phone_number": "0706-39 07 56",
       "email": "blingspatorslanda@gmail.com",
       "booking": "https://www.bokadirekt.se/places/bling-bling-spa-20842",
@@ -470,7 +471,7 @@
       "img": "first_lady_logo.png",
       "street_address": "Stallvägen 57",
       "zip_code": "423 55 Torslanda",
-      "geolocation": "57.7541970204442, 11.820852627016668",
+      "geolocation": { "coordinates": [57.7541970204442, 11.820852627016668] },
       "email": "annika@firstlady.se",
       "booking": "https://www.bokadirekt.se/places/first-lady-14551",
       "url": "https://firstlady.se/"
@@ -482,7 +483,7 @@
       "img": "meddo_solarium_logo.png",
       "street_address": "Torslanda torg 3",
       "zip_code": "423 32 Torslanda",
-      "geolocation": "57.72339983750486, 11.766866327015256",
+      "geolocation": { "coordinates": [57.72339983750486, 11.766866327015256] },
       "phone_number": "073-525 57 58",
       "booking": "https://sunapp.repayal.com/",
       "url": "https://www.facebook.com/MeddoTorslanda/"
@@ -494,7 +495,7 @@
       "img": "shiatsurummet_logo.jpeg",
       "street_address": "Torslanda torg 1",
       "zip_code": "423 32 Torslanda",
-      "geolocation": "57.723617495366504, 11.767320455850701",
+      "geolocation": { "coordinates": [57.723617495366504, 11.767320455850701] },
       "phone_number": "0706-28 55 04",
       "email": "shiatsurummet@gmail.com",
       "booking": "https://www.bokadirekt.se/places/shiatsurummet--12539",
@@ -507,7 +508,7 @@
       "img": "friskissvettis.png",
       "street_address": "Postflyget 4",
       "zip_code": "423 37 Torslanda",
-      "geolocation": "57.70863822376895, 11.778304440508183",
+      "geolocation": { "coordinates": [57.70863822376895, 11.778304440508183] },
       "phone_number": "031-723 56 55",
       "booking": "https://onlinebokning.pastelldata.com/1000/",
       "url": "https://www.friskissvettis.se/Goteborg/Harfinnsvi/Torslanda"
@@ -519,7 +520,7 @@
       "img": "nordicwellness_logo.svg",
       "street_address": "Gamla Flygplatsvägen 26",
       "zip_code": "423 37 Torslanda",
-      "geolocation": "57.71019492619084, 11.780390727014598",
+      "geolocation": { "coordinates": [57.71019492619084, 11.780390727014598] },
       "phone_number": "010-155 52 86",
       "email": "torslanda@nordicwellness.se",
       "url": "https://nordicwellness.se/vara-klubbar/goteborg/torslanda-amhult/"
@@ -531,7 +532,7 @@
       "img": "nordicwellness_logo.svg",
       "street_address": "Torslanda torg 1",
       "zip_code": "423 32 Torslanda",
-      "geolocation": "57.72363468308247, 11.767309727015249",
+      "geolocation": { "coordinates": [57.72363468308247, 11.767309727015249] },
       "phone_number": "010-155 52 72",
       "email": "torslanda.torg@nordicwellness.se",
       "url": "https://nordicwellness.se/vara-klubbar/goteborg/torslanda-torg/"
@@ -550,7 +551,7 @@
       "img": "aquarius_logo.jpg",
       "street_address": "Gamla Flygplatsvägen 4",
       "zip_code": "423 37 Torslanda",
-      "geolocation": "57.71342269100402, 11.783789640508422",
+      "geolocation": { "coordinates": [57.71342269100402, 11.783789640508422] },
       "phone_number": "031-92 05 25",
       "url": "https://www.facebook.com/salongaquarius"
     },
@@ -561,7 +562,7 @@
       "img": "klippa_logo.jpg",
       "street_address": "Amhultsvägen 3",
       "zip_code": "423 37 Torslanda",
-      "geolocation": "57.71048389572712, 11.773628484685531",
+      "geolocation": { "coordinates": [57.71048389572712, 11.773628484685531] },
       "phone_number": "031-92 03 10",
       "booking": "https://boka.itsperfect.se/25084612/Kund/Loggain?ReturnUrl=%2F25084612",
       "url": "https://klippa.nu/salonger/torslanda/"
@@ -573,7 +574,7 @@
       "img": "klipperian_logo.jpg",
       "street_address": "Torslanda torg 1",
       "zip_code": "423 32 Torslanda",
-      "geolocation": "57.72358884915506, 11.767331184686164",
+      "geolocation": { "coordinates": [57.72358884915506, 11.767331184686164] },
       "phone_number": "031-56 48 17",
       "email": "nyaklipperian@yahoo.se",
       "booking": "https://boka.hitta.se/salong/klipperian/1207",
@@ -586,7 +587,7 @@
       "img": "logotyp_klippotek_dandy_dark_background.svg",
       "street_address": "Gamla Flygplatsvägen 35",
       "zip_code": "423 37 Torslanda",
-      "geolocation": "57.71029077103582, 11.774591240508242",
+      "geolocation": { "coordinates": [57.71029077103582, 11.774591240508242] },
       "phone_number": "031-788 92 92",
       "booking": "https://boka.hitta.se/salong/klippotek-dandy/1061",
       "url": "http://klippotekdandy.se/salonger/torslanda/"
@@ -598,7 +599,7 @@
       "img": "blomsterlandet_logo.jpg",
       "street_address": "Flygfältsgatan 34",
       "zip_code": "423 37 Torslanda",
-      "geolocation": "57.70973976601238, 11.783141450925429",
+      "geolocation": { "coordinates": [57.70973976601238, 11.783141450925429] },
       "phone_number": "031-388 60 00",
       "email": "torslanda@blomsterlandet.se",
       "web_shop": "https://www.blomsterlandet.se/",
@@ -611,7 +612,7 @@
       "img": "malms_vaskor_logo.jpg",
       "street_address": "Gamla Flygplatsvägen 52",
       "zip_code": "423 37 Torslanda",
-      "geolocation": "57.71001038884916, 11.773051102692985",
+      "geolocation": { "coordinates": [57.71001038884916, 11.773051102692985] },
       "phone_number": "031-56 41 42",
       "email": "info@malmsvaskor.se",
       "url": "http://malmsvaskor.se/2.html"
@@ -623,7 +624,7 @@
       "img": "torslanda_blomsterhandel_logo.jpg",
       "street_address": "Torslanda torg 6",
       "zip_code": "423 32 Torslanda",
-      "geolocation": "57.72374161201119, 11.766773255942365",
+      "geolocation": { "coordinates": [57.72374161201119, 11.766773255942365] },
       "phone_number": "031-56 15 58",
       "url": "https://www.facebook.com/pages/category/Florist/Torslanda-Blomsterhandel-AB-107865215948388/"
     },
@@ -634,7 +635,7 @@
       "img": "torslanda_djurbutik_veterinarfoder_logo.jpg",
       "street_address": "Gamla Flygplatsvägen 18",
       "zip_code": "423 37 Torslanda",
-      "geolocation": "57.71046135713694, 11.780447810716092",
+      "geolocation": { "coordinates": [57.71046135713694, 11.780447810716092] },
       "phone_number": "031-92 00 54",
       "email": "info@torslandadjurbutik.se",
       "url": "https://www.torslandadjurbutik.se/"
@@ -646,7 +647,7 @@
       "img": "elon_logo.png",
       "street_address": "Postflyget 13",
       "zip_code": "423 37 Torslanda",
-      "geolocation": "57.70937694826014, 11.779725611762514",
+      "geolocation": { "coordinates": [57.70937694826014, 11.779725611762514] },
       "phone_number": "031-795 00 08",
       "email": "torslanda.friggahuset@elon.se",
       "web_shop": "https://www.elon.se/",
@@ -659,7 +660,7 @@
       "img": "byggmax_torslanda.svg",
       "street_address": "Gamla Flygplatsvägen 4",
       "zip_code": "423 37 Torslanda",
-      "geolocation": "57.713465983546826, 11.78393472710605",
+      "geolocation": { "coordinates": [57.713465983546826, 11.78393472710605] },
       "phone_number": "0771-89 00 89",
       "web_shop": "https://www.byggmax.se/",
       "url": "https://www.byggmax.se/butiker/gbg-torslanda"
@@ -671,7 +672,7 @@
       "img": "mobilkliniken_logo.jpg",
       "street_address": "Torslanda torg 3A",
       "zip_code": "423 32 Torslanda",
-      "geolocation": "57.72318122623783, 11.766955184778196",
+      "geolocation": { "coordinates": [57.72318122623783, 11.766955184778196] },
       "phone_number": "0762-40 62 40",
       "url": "https://www.facebook.com/MobilKliniken.T/"
     },
@@ -682,7 +683,7 @@
       "img": "gysens_hundcenter_logo.png",
       "street_address": "Torslanda torg 3",
       "zip_code": "423 32 Torslanda",
-      "geolocation": "57.72337119121347, 11.76684486943486",
+      "geolocation": { "coordinates": [57.72337119121347, 11.76684486943486] },
       "url": "http://www.gysenhttps://meet.google.com/ntz-yikp-xrys.se/"
     },
     {
@@ -692,16 +693,9 @@
       "img": "godishuset_logo.jpg",
       "street_address": "Vildkaprifolen 5",
       "zip_code": "423 33 Torslanda",
-      "geolocation": "57.72112886303996, 11.769413182927199",
+      "geolocation": { "coordinates": [57.72112886303996, 11.769413182927199] },
       "phone_number": "031-56 12 20",
       "url": "https://godis-huset.business.site/"
-    },
-    {
-      "category": "Groceries",
-      "name": "Amhults gottehus",
-      "tagline": "Godis och glass vid resecentrum",
-      "img": "amhult_gottehus_logo.jpg",
-      "url": "https://www.facebook.com/4-Gott-Amhult-192958097872439/?ref=page_internal"
     },
     {
       "category": "Groceries",
@@ -710,7 +704,7 @@
       "img": "hemkop_logo.jpeg",
       "street_address": "Torslanda torg",
       "zip_code": "423 32 Torslanda",
-      "geolocation": "57.72394308649705, 11.766956711763186",
+      "geolocation": { "coordinates": [57.72394308649705, 11.766956711763186] },
       "phone_number": "031-56 76 40",
       "web_shop":"https://www.hemkop.se/butik/4792",
       "url": "https://www.hemkop.se/butik/4792?gclsrc=aw.ds&gclsrc=aw.ds&gclid=CjwKCAjwhOD0BRAQEiwAK7JHmANmzp9uZKA1SCpeDaZmMNPHNefYyK-r824u38UXs6vBgsPk_HIKCBoCRDUQAvD_BwE"
@@ -722,7 +716,7 @@
       "img": "ica_maxi_torslanda_logo.png",
       "street_address": "Gamla Flygplatsvägen 60",
       "zip_code": "423 37 Torslanda",
-      "geolocation": "57.709629473431015, 11.772331898270046",
+      "geolocation": { "coordinates": [57.709629473431015, 11.772331898270046] },
       "phone_number": "031-720 56 00",
       "email": "kundkontakt.torslanda@maxi.ica.se",
       "web_shop": "https://www.ica.se/handla/maxi-ica-stormarknad-torslanda-id_11601/",
@@ -735,7 +729,7 @@
       "img": "ica-nara-logotyp.png",
       "street_address": "Linas lycka 2",
       "zip_code": "423 59 Torslanda",
-      "geolocation": "57.75947865263852, 11.832472084779875",
+      "geolocation": { "coordinates": [57.75947865263852, 11.832472084779875] },
       "phone_number": "031-92 52 95",
       "url": "https://www.ica.se/butiker/nara/goteborg/ica-nara-bjorlanda-16621/start/?gclid=Cj0KCQjws_r0BRCwARIsAMxfDRgHJib6Ty59kQB4UMsKYHn9RfVOuEHwYlU-EZ5arexJEma3sW33WT8aAtw7EALw_wcB"
     },
@@ -753,7 +747,7 @@
       "img": "willys_hemma_logo.png",
       "street_address": "Runskriftsgatan 1",
       "zip_code": "423 47 Torslanda",
-      "geolocation": "57.735363794392576, 11.770212159940007",
+      "geolocation": { "coordinates": [57.735363794392576, 11.770212159940007] },
       "phone_number": "031-315 01 70",
       "url": "https://www.willys.se/butik/2855"
     },
@@ -764,7 +758,7 @@
       "img": "torslanda_fisk_logo.png",
       "street_address": "Torslanda torg 1",
       "zip_code": "423 32 Torslanda",
-      "geolocation": "57.723737795058966, 11.767167298270698",
+      "geolocation": { "coordinates": [57.723737795058966, 11.767167298270698] },
       "phone_number": "031-56 48 90",
       "url": "http://www.torslandafisk.se/"
     },
@@ -775,7 +769,7 @@
       "img": "torslanda_frukthall_logo.jpg",
       "street_address": "Torslanda torg 2",
       "zip_code": "423 32 Torslanda",
-      "geolocation": "57.72363221988583, 11.766911069434874",
+      "geolocation": { "coordinates": [57.72363221988583, 11.766911069434874] },
       "phone_number": "031-56 24 10",
       "url": "https://www.facebook.com/torslandafrukthall"
     },
@@ -786,7 +780,7 @@
       "img": "bjorlanda_fisk_skaldjur_logo.jpg",
       "street_address": "Linas lycka 6",
       "zip_code": "423 59 Torslanda",
-      "geolocation": "57.75919437716396, 11.832072540600697",
+      "geolocation": { "coordinates": [57.75919437716396, 11.832072540600697] },
       "phone_number": "031-92 50 40",
       "url": "http://bjorlandafisk.se/index.html"
     },
@@ -797,7 +791,7 @@
       "img": "akes_honokaka_logo.png",
       "street_address": "Nordhagsvägen 16",
       "zip_code": "423 34 Torslanda",
-      "geolocation": "57.7172885862374, 11.77898535594207",
+      "geolocation": { "coordinates": [57.7172885862374, 11.77898535594207] },
       "phone_number": "031-92 36 20",
       "url": "http://www.honokaka.se/kontakt/oppettider"
     },

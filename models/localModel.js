@@ -18,6 +18,31 @@ const localSchema = new Schema({
     img_id: {
         type: String
     },
+    street_address: {
+        type: String
+    },
+    zip_code: {
+        type: String
+    },
+    geolocation:{
+        type: {
+            type: String,
+            default: "Point",
+        },
+        coordinates: [Number],
+    },
+    phone_number: {
+        type: String,
+    },
+    email: {
+        type: String,
+    },
+    web_shop: {
+        type: String,
+    },
+    booking: {
+        type: String,
+    },
     url: {
         type: String,
     }
