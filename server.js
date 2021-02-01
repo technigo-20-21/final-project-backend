@@ -108,12 +108,10 @@ app.use(bodyParser.json());
 if (process.env.RESET_DATABASE) {
   const populateDatabase = async () => {
     await Local.deleteMany();
-
     localsData.forEach((item) => {
       const imagePath = `./logos/${item.category.toLocaleLowerCase()}/${
         item.img
       }`;
-      console.log(imagePath);
       cloudinary.uploader
         .upload(imagePath, {
           folder: `image_logo/${item.category.toLocaleLowerCase()}`,
@@ -173,28 +171,7 @@ app.post("/sessions", async (req, res) => {
   }
 });
 
-// Locals endpoints
-app.post("/locals", parser.single("img_url"), async (req, res) => {
-  // Local.findOne({name:req.body.name},(data)=> {
-  //   if(data===null){
-  const newLocal = new Local({
-    category: req.body.category,
-    name: req.body.name,
-    tagline: req.body.tagline,
-    img_url: req.file.path,
-    img_id: req.file.filename,
-    url: req.body.url,
-  });
-  newLocal.save((err, data) => {
-    if (err) return res.json({ Error: err });
-    return res.json(data);
-  });
-  // } else {
-  //   return res.json({message: "Local already exist"})
-
-  // })
-});
-
+// Authenticate user 
 app.get("/:id/user", authenticateUser);
 app.get("/:id/user", async (req, res) => {
   const accessToken = req.header("Authorization");
@@ -202,7 +179,44 @@ app.get("/:id/user", async (req, res) => {
   res.json({ message: `Hello ${user.firstName} ${user.lastName}` });
 });
 
-app.get("/");
+// Locals endpoints
+// Post new local
+app.post("/locals", parser.single("img_url"), async (req, res) => {
+  Local.findOne({name:req.body.name},(data)=> {
+    if(data===null){
+      const newLocal = new Local({
+        category: req.body.category,
+        name: req.body.name,
+        tagline: req.body.tagline,
+        img_url: req.file.path,
+        img_id: req.file.filename,
+        street_address: req.body.street,
+        zip_code: req.body.zip_code,
+        phone_number: req.body.phone_number,
+        web_shop: req.body.web_shop,
+        booking: req.body.booking,
+        url: req.body.url,
+      });
+      newLocal.save((err, data) => {
+      if (err) return res.json({ Error: err });
+        return res.json(data);
+      });
+    } else {
+      return res.json({message: "Local already exist"})
+   }
+  })
+});
+
+app.get("/locals"), async (req, res) => {
+  console.log("hi")
+  try {
+    const locals = await Local.find();
+    console.log(locals);
+    res.json(locals);
+  } catch (err) {
+    res.status(400).json({ message: "Could not find locals.", errors: err });
+  }
+};
 
 // Start the server
 app.listen(port, () => {
