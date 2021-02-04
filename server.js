@@ -103,8 +103,11 @@ const authenticateUser = async (req, res, next) => {
 }
 
 const LocalCategory = new mongoose.model('LocalCategory',{
-  category: String,
-  display_name: String
+  
+    name: String,
+    display_name: String,
+    img_url: String
+  
 })
 
 const port = process.env.PORT || 8080;
@@ -121,11 +124,27 @@ if (process.env.RESET_DATABASE) {
 
     let localCategories = [];
 
-    localCategoriesData.forEach( async category => {
-      const newCategory = new LocalCategory(category)
-      localCategories.push(newCategory);
-      await newCategory.save();
-      console.log(localCategories);
+    localCategoriesData.forEach( async categoryItem => {
+      const imagePath = `./categories/${categoryItem.img}`;
+      cloudinary.uploader.upload(imagePath, {
+        folder: "categories",
+        use_filename: true,
+        unique_filename: false,
+        overwrite: true,
+        width: "auto",
+        dpr: "auto",
+        responsive: "true",
+        crop: "scale",
+        responsive_placeholder: "blank"
+      })
+      .then((result) => {
+        categoryItem.img_url = result.url;
+        const newCategory = new LocalCategory(categoryItem)
+        localCategories.push(newCategory);
+        newCategory.save();
+        console.log(localCategories);
+      })
+      .catch((error) => console.log(error));
     })
 
     localsData.forEach((localItem) => {
@@ -206,6 +225,7 @@ app.get("/:id/user", async (req, res) => {
 app.get('/locals', async (req, res) => {
   try {
     const allLocals = await Local.find();
+    console.log(allLocals);
     res.json(allLocals);
   } catch (err) {
   res.status(400).json({ message: "Could not find locals.", errors: err });
