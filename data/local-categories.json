@@ -1,0 +1,40 @@
+[
+    {
+            "name": "restaurant",
+            "display_name": "Äta ute",
+            "img": "dinner.jpg"
+    }, 
+    {
+           "name": "cafe",
+           "display_name": "Fika",
+           "img": "cafe.jpg"
+         
+     },
+     { 
+           "name": "groceries",
+           "display_name": "Mat & Götta",
+          "img": "groceries.jpeg"
+     },
+     {
+
+           "name": "shopping",
+           "display_name": "Shoppa",
+           "img": "shopping.jpeg"
+         
+     },
+     {
+
+             "name": "beauty",
+             "display_name": "Hälsa & Skönhet",
+             "img": "hair.jpg"
+         
+     },
+     {
+
+           "name": "service",
+             "display_name": "Service",
+             "img": "shoecare.jpg"
+         
+     }
+    
+]

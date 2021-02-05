@@ -7,9 +7,11 @@ import bcrypt from "bcrypt-nodejs";
 import dotenv from "dotenv";
 import cloudinaryStorage from "multer-storage-cloudinary";
 import multer from "multer";
+import cloudinaryFramework from "cloudinary";
+
 import Local from "./models/localModel";
 import localsData from "./data/locals.json";
-import cloudinaryFramework from "cloudinary";
+import localCategoriesData from "./data/local-categories.json";
 
 dotenv.config();
 
@@ -33,6 +35,8 @@ const storage = cloudinaryStorage({
 });
 
 const parser = multer({ storage });
+ 
+
 
 const userSchema = new mongoose.Schema({
   firstName: {
@@ -96,7 +100,15 @@ const authenticateUser = async (req, res, next) => {
     res.status(401).json({ error: "Something went wront, please try again." });
     console.log(err);
   }
-};
+}
+
+const LocalCategory = new mongoose.model('LocalCategory',{
+  
+    name: String,
+    display_name: String,
+    img_url: String
+  
+})
 
 const port = process.env.PORT || 8080;
 const app = express();
@@ -107,24 +119,54 @@ app.use(bodyParser.json());
 // Clearing and populating database
 if (process.env.RESET_DATABASE) {
   const populateDatabase = async () => {
+    await LocalCategory.deleteMany();
     await Local.deleteMany();
-    localsData.forEach((item) => {
-      const imagePath = `./logos/${item.category.toLocaleLowerCase()}/${
-        item.img
+
+    let localCategories = [];
+
+    localCategoriesData.forEach( async categoryItem => {
+      const imagePath = `./categories/${categoryItem.img}`;
+      cloudinary.uploader.upload(imagePath, {
+        folder: "categories",
+        use_filename: true,
+        unique_filename: false,
+        overwrite: true,
+        width: "auto",
+        dpr: "auto",
+        responsive: "true",
+        crop: "scale",
+        responsive_placeholder: "blank"
+      })
+      .then((result) => {
+        categoryItem.img_url = result.url;
+        const newCategory = new LocalCategory(categoryItem)
+        localCategories.push(newCategory);
+        newCategory.save();
+        console.log(localCategories);
+      })
+      .catch((error) => console.log(error));
+    })
+
+    localsData.forEach((localItem) => {
+      const imagePath = `./logos/${localItem.category.toLocaleLowerCase()}/${
+        localItem.img
       }`;
       cloudinary.uploader
         .upload(imagePath, {
-          folder: `image_logo/${item.category.toLocaleLowerCase()}`,
+          folder: `image_logo/${localItem.category.toLocaleLowerCase()}`,
           use_filename: true,
           unique_filename: false,
           overwrite: true,
         })
         .then((result) => {
-          item.img_url = result.url;
-          item.img_id = result.public_id;
-          const newLocal = new Local(item);
+          localItem.img_url = result.url;
+          localItem.img_id = result.public_id;
+          const newLocal = new Local({
+            ...localItem,
+            category: localCategories.find(categoryItem  => categoryItem.category === localItem.category)
+          });
           newLocal.save();
-          console.log(`saved ${item.name}`);
+          console.log(`saved ${localItem.name}`);
         })
         .catch((error) => console.log(error));
     });
@@ -180,7 +222,27 @@ app.get("/:id/user", async (req, res) => {
   res.json({ message: `Hello ${user.firstName} ${user.lastName}` });
 });
 
-// Locals endpoints
+// Get all locals endpoints
+app.get('/locals', async (req, res) => {
+  try {
+    const allLocals = await Local.find();
+    console.log(allLocals);
+    res.json(allLocals);
+  } catch (err) {
+  res.status(400).json({ message: "Could not find locals.", errors: err });
+}
+});
+
+// Get local categories endpoint
+app.get("/locals/categories", async (req, res) => {
+  try {
+    const allCategories = await LocalCategory.find();
+    res.json(allCategories);
+  } catch (err) {
+    res.status(400).json({ message: "Could not find categories.", errors: err });
+  }
+})
+
 // Post new local
 app.post("/locals", parser.single("img_url"), async (req, res) => {
   Local.findOne({name:req.body.name},(data)=> {
@@ -207,17 +269,6 @@ app.post("/locals", parser.single("img_url"), async (req, res) => {
    }
   })
 });
-
-app.get("/locals"), async (req, res) => {
-  console.log("hi")
-  try {
-    const locals = await Local.find();
-    console.log(locals);
-    res.json(locals);
-  } catch (err) {
-    res.status(400).json({ message: "Could not find locals.", errors: err });
-  }
-};
 
 // Start the server
 app.listen(port, () => {
