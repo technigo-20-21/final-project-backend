@@ -12,6 +12,7 @@ import cloudinaryFramework from "cloudinary";
 import Local from "./models/localModel";
 import localsData from "./data/locals.json";
 import localCategoriesData from "./data/local-categories.json";
+import { get } from "http";
 
 dotenv.config();
 
@@ -159,11 +160,11 @@ if (process.env.RESET_DATABASE) {
           overwrite: true,
         })
         .then((result) => {
+          localItem.category = localItem.category.toLowerCase();
           localItem.img_url = result.url;
           localItem.img_id = result.public_id;
           const newLocal = new Local({
-            ...localItem,
-            category: localCategories.find(categoryItem  => categoryItem.category === localItem.category)
+            ...localItem
           });
           newLocal.save();
           console.log(`saved ${localItem.name}`);
@@ -224,13 +225,29 @@ app.get("/:id/user", async (req, res) => {
 // Get all locals endpoints
 app.get('/locals', async (req, res) => {
   try {
-    const allLocals = await Local.find();
+    const allLocals = await Local.find(req.query);
     console.log(allLocals);
     res.json(allLocals);
   } catch (err) {
   res.status(400).json({ message: "Could not find locals.", errors: err });
 }
 });
+
+// Get locals category list endpoint
+app.get('/locals/:category', async (req, res) => {
+  try {
+    const {category}  = req.params;
+    console.log(category, req.category, req.params);
+    const localItems = await Local.find({ category })
+      // .populate('category')
+      .exec();
+      console.log(localItems)
+    res.json(localItems);
+} catch (err) {
+  throw err;
+  res.status(400).json({ message: "Could not find category items.", errors: err })
+}
+})
 
 // Get local categories endpoint
 app.get("/locals/categories", async (req, res) => {

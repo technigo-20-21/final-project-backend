@@ -4,8 +4,7 @@ const Schema = mongoose.Schema;
 
 const localSchema = new Schema({
     category: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'LocalCategory'
+        type: String,
     },
     name: {
         type: String,
