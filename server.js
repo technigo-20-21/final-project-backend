@@ -163,6 +163,7 @@ app.post("/sessions", async (req, res) => {
       accessToken: user.accessToken,
       firstName: user.firstName,
       lastName: user.lastName,
+      email: user.email,
     });
   } else {
     res.status(400).json({
