@@ -9,7 +9,12 @@ import cloudinaryStorage from "multer-storage-cloudinary";
 import multer from "multer";
 import Local from "./models/localModel";
 import localsData from "./data/locals.json";
+<<<<<<< HEAD
 import cloudinaryFramework from "cloudinary";
+=======
+import localCategoriesData from "./data/local-categories.json";
+import { get } from "http";
+>>>>>>> 96f539ada31b66375f63f02de24a93a9cfd236bf
 
 dotenv.config();
 
@@ -120,9 +125,18 @@ if (process.env.RESET_DATABASE) {
           overwrite: true,
         })
         .then((result) => {
+<<<<<<< HEAD
           item.img_url = result.url;
           item.img_id = result.public_id;
           const newLocal = new Local(item);
+=======
+          localItem.category = localItem.category.toLowerCase();
+          localItem.img_url = result.url;
+          localItem.img_id = result.public_id;
+          const newLocal = new Local({
+            ...localItem
+          });
+>>>>>>> 96f539ada31b66375f63f02de24a93a9cfd236bf
           newLocal.save();
           console.log(`saved ${item.name}`);
         })
@@ -185,8 +199,14 @@ app.put("/:id/user", async (req, res) => {
   const { firstName, lastName, email } = req.body;
 
   try {
+<<<<<<< HEAD
     await User.updateOne( {accessToken }, { firstName, lastName, email });
     res.status(200).json({message: `User details for ${firstName} updated.`});
+=======
+    const allLocals = await Local.find(req.query);
+    console.log(allLocals);
+    res.json(allLocals);
+>>>>>>> 96f539ada31b66375f63f02de24a93a9cfd236bf
   } catch (err) {
     res.status(400).json({
       message: "Could not update user.",
@@ -195,6 +215,7 @@ app.put("/:id/user", async (req, res) => {
   }
 });
 
+<<<<<<< HEAD
 // Authenticate user
 app.get("/:id/user", authenticateUser);
 app.get("/:id/user", async (req, res) => {
@@ -202,6 +223,33 @@ app.get("/:id/user", async (req, res) => {
   const user = await User.findOne({ accessToken: accessToken });
   res.json({ message: `Hello ${user.firstName} ${user.lastName}` });
 });
+=======
+// Get locals category list endpoint
+app.get('/locals/:category', async (req, res) => {
+  try {
+    const {category}  = req.params;
+    console.log(category, req.category, req.params);
+    const localItems = await Local.find({ category })
+      // .populate('category')
+      .exec();
+      console.log(localItems)
+    res.json(localItems);
+} catch (err) {
+  throw err;
+  res.status(400).json({ message: "Could not find category items.", errors: err })
+}
+})
+
+// Get local categories endpoint
+app.get("/locals/categories", async (req, res) => {
+  try {
+    const allCategories = await LocalCategory.find();
+    res.json(allCategories);
+  } catch (err) {
+    res.status(400).json({ message: "Could not find categories.", errors: err });
+  }
+})
+>>>>>>> 96f539ada31b66375f63f02de24a93a9cfd236bf
 
 // Locals endpoints
 // Post new local
