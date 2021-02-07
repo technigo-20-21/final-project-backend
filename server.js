@@ -12,7 +12,7 @@ import cloudinaryFramework from "cloudinary";
 import Local from "./models/localModel";
 import localsData from "./data/locals.json";
 import localCategoriesData from "./data/local-categories.json";
-import { get } from "http";
+
 
 dotenv.config();
 
@@ -226,25 +226,30 @@ app.get("/:id/user", async (req, res) => {
 app.get('/locals', async (req, res) => {
   try {
     const allLocals = await Local.find(req.query);
-    console.log(allLocals);
     res.json(allLocals);
   } catch (err) {
   res.status(400).json({ message: "Could not find locals.", errors: err });
 }
 });
 
+// Get one local endpoint
+app.get('/local/:id', async (req, res) => {
+  try {
+    const { id } = req.params;
+    console.log(id, req.params, req.params._id, req.params.id);
+  } catch (err) {
+    throw err;
+  }
+})
+
 // Get locals category list endpoint
 app.get('/locals/:category', async (req, res) => {
   try {
-    const {category}  = req.params;
-    console.log(category, req.category, req.params);
+    const { category } = req.params;
     const localItems = await Local.find({ category })
-      // .populate('category')
       .exec();
-      console.log(localItems)
     res.json(localItems);
 } catch (err) {
-  throw err;
   res.status(400).json({ message: "Could not find category items.", errors: err })
 }
 })
