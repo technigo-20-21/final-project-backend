@@ -9,12 +9,7 @@ import cloudinaryStorage from "multer-storage-cloudinary";
 import multer from "multer";
 import Local from "./models/localModel";
 import localsData from "./data/locals.json";
-<<<<<<< HEAD
 import cloudinaryFramework from "cloudinary";
-=======
-import localCategoriesData from "./data/local-categories.json";
-import { get } from "http";
->>>>>>> 96f539ada31b66375f63f02de24a93a9cfd236bf
 
 dotenv.config();
 
@@ -98,7 +93,7 @@ const authenticateUser = async (req, res, next) => {
     req.user = user;
     next();
   } catch (err) {
-    res.status(401).json({ error: "Something went wrong, please try again." });
+    res.status(401).json({ error: "Could not authenticate user, please try again." });
     console.log(err);
   }
 };
@@ -125,18 +120,12 @@ if (process.env.RESET_DATABASE) {
           overwrite: true,
         })
         .then((result) => {
-<<<<<<< HEAD
-          item.img_url = result.url;
-          item.img_id = result.public_id;
-          const newLocal = new Local(item);
-=======
           localItem.category = localItem.category.toLowerCase();
           localItem.img_url = result.url;
           localItem.img_id = result.public_id;
           const newLocal = new Local({
             ...localItem
           });
->>>>>>> 96f539ada31b66375f63f02de24a93a9cfd236bf
           newLocal.save();
           console.log(`saved ${item.name}`);
         })
@@ -176,7 +165,6 @@ app.post("/users", async (req, res) => {
 // Endpoint for logging in user
 app.post("/sessions", async (req, res) => {
   const user = await User.findOne({ email: req.body.email });
-  console.log("user: " + user)
   if (user && bcrypt.compareSync(req.body.password, user.password)) {
     res.json({
       id: user._id,
@@ -199,14 +187,9 @@ app.put("/:id/user", async (req, res) => {
   const { firstName, lastName, email } = req.body;
 
   try {
-<<<<<<< HEAD
     await User.updateOne( {accessToken }, { firstName, lastName, email });
     res.status(200).json({message: `User details for ${firstName} updated.`});
-=======
-    const allLocals = await Local.find(req.query);
-    console.log(allLocals);
-    res.json(allLocals);
->>>>>>> 96f539ada31b66375f63f02de24a93a9cfd236bf
+    
   } catch (err) {
     res.status(400).json({
       message: "Could not update user.",
@@ -215,7 +198,6 @@ app.put("/:id/user", async (req, res) => {
   }
 });
 
-<<<<<<< HEAD
 // Authenticate user
 app.get("/:id/user", authenticateUser);
 app.get("/:id/user", async (req, res) => {
@@ -223,7 +205,18 @@ app.get("/:id/user", async (req, res) => {
   const user = await User.findOne({ accessToken: accessToken });
   res.json({ message: `Hello ${user.firstName} ${user.lastName}` });
 });
-=======
+
+// Get all locals endpoints
+app.get('/locals', async (req, res) => {
+  try {
+    const allLocals = await Local.find(req.query);
+    console.log(allLocals);
+    res.json(allLocals);
+  } catch (err) {
+  res.status(400).json({ message: "Could not find locals.", errors: err });
+}
+});
+
 // Get locals category list endpoint
 app.get('/locals/:category', async (req, res) => {
   try {
@@ -249,7 +242,6 @@ app.get("/locals/categories", async (req, res) => {
     res.status(400).json({ message: "Could not find categories.", errors: err });
   }
 })
->>>>>>> 96f539ada31b66375f63f02de24a93a9cfd236bf
 
 // Locals endpoints
 // Post new local
