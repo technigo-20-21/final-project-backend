@@ -94,7 +94,7 @@ const authenticateUser = async (req, res, next) => {
     req.user = user;
     next();
   } catch (err) {
-    res.status(401).json({ error: "Something went wrong, please try again." });
+    res.status(401).json({ error: "Could not authenticate user, please try again." });
     console.log(err);
   }
 };
@@ -163,7 +163,6 @@ app.post("/users", async (req, res) => {
 // Endpoint for logging in user
 app.post("/sessions", async (req, res) => {
   const user = await User.findOne({ email: req.body.email });
-  console.log("user: " + user)
   if (user && bcrypt.compareSync(req.body.password, user.password)) {
     res.json({
       id: user._id,
@@ -186,7 +185,9 @@ app.put("/:id/user", async (req, res) => {
   const { firstName, lastName, email } = req.body;
 
   try {
+    await User.updateOne( {accessToken }, { firstName, lastName, email });
     res.status(200).json({message: `User details for ${firstName} updated.`});
+    
   } catch (err) {
   }
 });
