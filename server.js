@@ -9,7 +9,6 @@ import cloudinaryStorage from "multer-storage-cloudinary";
 import multer from "multer";
 import Local from "./models/localModel";
 import localsData from "./data/locals.json";
-
 import cloudinaryFramework from "cloudinary";
 import localCategoriesData from "./data/local-categories.json";
 
