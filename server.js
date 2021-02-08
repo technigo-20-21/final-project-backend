@@ -192,16 +192,6 @@ app.put("/:id/user", async (req, res) => {
   }
 });
 
-// Get one local endpoint
-app.get('/local/:id', async (req, res) => {
-  try {
-    const { id } = req.params;
-    console.log(id, req.params, req.params._id, req.params.id);
-  } catch (err) {
-    throw err;
-  }
-})
-
 // Authenticate user
 app.get("/:id/user", authenticateUser);
 app.get("/:id/user", async (req, res) => {
@@ -209,13 +199,43 @@ app.get("/:id/user", async (req, res) => {
   const user = await User.findOne({ accessToken: accessToken });
   res.json({ message: `Hello ${user.firstName} ${user.lastName}` });
 });
+
+
+// Locals endpoints
+app.get("/locals"),
+  async (req, res) => {
+    console.log("hi");
+    try {
+      const locals = await Local.find();
+      console.log(locals);
+      res.json(locals);
+    } catch (err) {
+      res.status(400).json({ 
+        message: "Could not find locals.", errors: err 
+      });
+    }
+  };
+
+// Get one local endpoint
+app.get('/local/:id', async (req, res) => {
+  try {
+    const { id } = req.params;
+    console.log(id, req.params, req.params._id, req.params.id);
+    const newLocal = await Local.findById(id)
+      .exec();
+    res.json(newLocal)
+  } catch (err) {
+    throw err;
+  }
+})
+
 // Get locals category list endpoint
 app.get('/locals/:category', async (req, res) => {
   try {
     const { category } = req.params;
-    const localItems = await Local.find({ category })
+    const localCategory = await Local.find({ category })
       .exec();
-    res.json(localItems);
+    res.json(localCategory);
 } catch (err) {
   res.status(400).json({ message: "Could not find category items.", errors: err })
 }
@@ -231,7 +251,6 @@ app.get("/locals/categories", async (req, res) => {
   }
 })
 
-// Locals endpoints
 // Post new local
 app.post("/locals", parser.single("img_url"), async (req, res) => {
   Local.findOne({ name: req.body.name }, (data) => {
@@ -258,18 +277,6 @@ app.post("/locals", parser.single("img_url"), async (req, res) => {
     }
   });
 });
-
-app.get("/locals"),
-  async (req, res) => {
-    console.log("hi");
-    try {
-      const locals = await Local.find();
-      console.log(locals);
-      res.json(locals);
-    } catch (err) {
-      res.status(400).json({ message: "Could not find locals.", errors: err });
-    }
-  };
 
 // Start the server
 app.listen(port, () => {
