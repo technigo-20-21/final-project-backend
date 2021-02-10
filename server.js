@@ -264,18 +264,6 @@ app.get('/local/:id', async (req, res) => {
   }
 })
 
-// Get locals category list endpoint
-app.get('/locals/:category', async (req, res) => {
-  try {
-    const { category } = req.params;
-    const localCategory = await Local.find({ category })
-      .exec();
-    res.json(localCategory);
-} catch (err) {
-  res.status(400).json({ message: "Could not find category items.", errors: err })
-}
-})
-
 // Get local categories endpoint
 app.get("/locals/categories", async (req, res) => {
   try {
@@ -285,6 +273,21 @@ app.get("/locals/categories", async (req, res) => {
     res.status(400).json({ message: "Could not find categories.", errors: err });
   }
 })
+
+// Get locals category list endpoint
+app.get('/locals/:category', async (req, res) => {
+  try {
+    const { category } = req.params;
+    const localCategory = await Local.find({ category })
+      .exec();
+    console.log(localCategory)
+    res.json(localCategory);
+} catch (err) {
+  res.status(400).json({ message: "Could not find category items.", errors: err })
+}
+})
+
+
 
 // Post new local
 app.post("/locals", parser.single("img_url"), async (req, res) => {
@@ -312,6 +315,7 @@ app.post("/locals", parser.single("img_url"), async (req, res) => {
     }
   });
 });
+
 
 // Start the server
 app.listen(port, () => {
