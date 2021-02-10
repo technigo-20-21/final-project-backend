@@ -29,7 +29,7 @@ const storage = cloudinaryStorage({
   cloudinary,
   params: {
     folder: "image_logo",
-    transformation: [{ width: 500, height: 500, crop: "limit" }],
+    transformation: [{ width: 400, height: 400, crop: "limit" }],
   },
 });
 
@@ -103,6 +103,12 @@ const authenticateUser = async (req, res, next) => {
   }
 };
 
+const LocalCategory = new mongoose.model('LocalCategory',{
+  name: String,
+  display_name: String,
+  img_url: String
+})
+
 const port = process.env.PORT || 8080;
 const app = express();
 
@@ -113,6 +119,7 @@ app.use(bodyParser.json());
 if (process.env.RESET_DATABASE) {
   const populateDatabase = async () => {
     await Local.deleteMany();
+    await LocalCategory.deleteMany();
     localsData.forEach((item) => {
       const imagePath = `./logos/${item.category.toLocaleLowerCase()}/${
         item.img
@@ -123,16 +130,47 @@ if (process.env.RESET_DATABASE) {
           use_filename: true,
           unique_filename: false,
           overwrite: true,
+          width: "auto",
+          dpr: "auto",
+          responsive: "true",
+          crop: "scale",
+          responsive_placeholder: "blank"
         })
         .then((result) => {
           item.img_url = result.url;
           item.img_id = result.public_id;
+          console.log(item)
           const newLocal = new Local(item);
           newLocal.save();
           console.log(`saved ${item.name}`);
         })
         .catch((error) => console.log(error));
     });
+    let localCategories = [];
+
+
+    localCategoriesData.forEach( async categoryItem => {
+      const imagePath = `./categories/${categoryItem.img}`;
+        cloudinary.uploader.upload(imagePath, {
+          folder: "categories",
+          use_filename: true,
+          unique_filename: false,
+          overwrite: true,
+          width: "auto",
+          dpr: "auto",
+          responsive: "true",
+          crop: "scale",
+          responsive_placeholder: "blank"
+        })
+        .then((result) => {
+          categoryItem.img_url = result.url;
+          const newCategory = new LocalCategory(categoryItem)
+          localCategories.push(newCategory);
+          newCategory.save();
+          console.log(localCategories);
+        })
+        .catch((error) => console.log(error));
+      });
   };
   populateDatabase();
 }
@@ -208,10 +246,8 @@ app.get("/:id/user", async (req, res) => {
 // Locals endpoints
 app.get("/locals"),
   async (req, res) => {
-    console.log("hi");
     try {
       const locals = await Local.find();
-      console.log(locals);
       res.json(locals);
     } catch (err) {
       res.status(400).json({ 
@@ -224,7 +260,6 @@ app.get("/locals"),
 app.get('/local/:id', async (req, res) => {
   try {
     const { id } = req.params;
-    console.log(id, req.params, req.params._id, req.params.id);
     const newLocal = await Local.findById(id)
       .exec();
     res.json(newLocal)
