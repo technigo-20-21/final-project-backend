@@ -65,6 +65,10 @@ const userSchema = new mongoose.Schema({
     default: () => crypto.randomBytes(128).toString("hex"),
     unique: true,
   },
+  favourites: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Local'
+  }
 });
 
 userSchema.pre("save", async function (next) {
