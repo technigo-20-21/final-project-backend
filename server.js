@@ -66,9 +66,13 @@ const userSchema = new mongoose.Schema({
     unique: true,
   },
   favourites: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'Local'
-  }
+    type: [String],
+    default: [],
+  },
+  // favourites: {
+  //   type: [mongoose.Schema.Types.ObjectId],
+  //   ref: "Local",
+  // },
 });
 
 userSchema.pre("save", async function (next) {
@@ -98,16 +102,18 @@ const authenticateUser = async (req, res, next) => {
     req.user = user;
     next();
   } catch (err) {
-    res.status(401).json({ error: "Could not authenticate user, please try again." });
+    res
+      .status(401)
+      .json({ error: "Could not authenticate user, please try again." });
     console.log(err);
   }
 };
 
-const LocalCategory = new mongoose.model('LocalCategory',{
+const LocalCategory = new mongoose.model("LocalCategory", {
   name: String,
   display_name: String,
-  img_url: String
-})
+  img_url: String,
+});
 
 const port = process.env.PORT || 8080;
 const app = express();
@@ -134,12 +140,12 @@ if (process.env.RESET_DATABASE) {
           dpr: "auto",
           responsive: "true",
           crop: "scale",
-          responsive_placeholder: "blank"
+          responsive_placeholder: "blank",
         })
         .then((result) => {
           item.img_url = result.url;
           item.img_id = result.public_id;
-          console.log(item)
+          console.log(item);
           const newLocal = new Local(item);
           newLocal.save();
           console.log(`saved ${item.name}`);
@@ -148,10 +154,10 @@ if (process.env.RESET_DATABASE) {
     });
     let localCategories = [];
 
-
-    localCategoriesData.forEach( async categoryItem => {
+    localCategoriesData.forEach(async (categoryItem) => {
       const imagePath = `./categories/${categoryItem.img}`;
-        cloudinary.uploader.upload(imagePath, {
+      cloudinary.uploader
+        .upload(imagePath, {
           folder: "categories",
           use_filename: true,
           unique_filename: false,
@@ -160,17 +166,17 @@ if (process.env.RESET_DATABASE) {
           dpr: "auto",
           responsive: "true",
           crop: "scale",
-          responsive_placeholder: "blank"
+          responsive_placeholder: "blank",
         })
         .then((result) => {
           categoryItem.img_url = result.url;
-          const newCategory = new LocalCategory(categoryItem)
+          const newCategory = new LocalCategory(categoryItem);
           localCategories.push(newCategory);
           newCategory.save();
           console.log(localCategories);
         })
         .catch((error) => console.log(error));
-      });
+    });
   };
   populateDatabase();
 }
@@ -189,7 +195,14 @@ app.get("/users", async (req, res) => {
 app.post("/users", async (req, res) => {
   try {
     const { firstName, lastName, email, password } = req.body;
-    const newUser = new User({ firstName, lastName, email, password });
+    const emailLowerCase = email.toLowerCase();
+
+    const newUser = new User({
+      firstName,
+      lastName,
+      email: emailLowerCase,
+      password,
+    });
     await newUser.save();
     res.status(200).json({
       id: newUser._id,
@@ -212,6 +225,7 @@ app.post("/sessions", async (req, res) => {
       firstName: user.firstName,
       lastName: user.lastName,
       email: user.email,
+      favourites: user.favourites,
     });
   } else {
     res.status(400).json({
@@ -225,13 +239,12 @@ app.put("/:id/user", authenticateUser);
 app.put("/:id/user", async (req, res) => {
   const accessToken = req.header("Authorization");
   const { firstName, lastName, email } = req.body;
-
   try {
-    await User.updateOne( {accessToken }, { firstName, lastName, email });
-    res.status(200).json({message: `User details for ${firstName} updated.`});
-    
-  } catch (err) {
-  }
+    await User.updateOne({ accessToken }, { firstName, lastName, email });
+    res
+      .status(200)
+      .json({ message: `User details for ${firstName} ${lastName} updated.` });
+  } catch (err) {}
 });
 
 // Authenticate user
@@ -239,9 +252,33 @@ app.get("/:id/user", authenticateUser);
 app.get("/:id/user", async (req, res) => {
   const accessToken = req.header("Authorization");
   const user = await User.findOne({ accessToken: accessToken });
+  // .populate('favourites');
   res.json({ message: `Hello ${user.firstName} ${user.lastName}` });
 });
 
+// Get user favourites
+app.get("/:id/favourites", authenticateUser);
+app.get("/:id/favourites", async (req, res) => {
+  const accessToken = req.header("Authorization");
+  const user = await User.findOne({ accessToken: accessToken });
+  res.json({ message: `Favourites: ${user.favourites}` });
+});
+
+// Update user favourites
+app.put("/:id/favourites", authenticateUser);
+app.put("/:id/favourites", async (req, res) => {
+  const accessToken = req.header("Authorization");
+  const { favourites } = req.body;
+  try {
+    await User.updateOne({ accessToken }, { favourites });
+    res.status(200).json({ message: "Favourites updated." });
+  } catch (err) {
+    res
+      .status(400)
+      .json({ message: "Could not update favourites.", errors: err });
+  }
+  res.json({ message: `Favourites: ${user.favourites}` });
+});
 
 // Locals endpoints
 app.get("/locals"),
@@ -250,35 +287,36 @@ app.get("/locals"),
       const locals = await Local.find();
       res.json(locals);
     } catch (err) {
-      res.status(400).json({ 
-        message: "Could not find locals.", errors: err 
+      res.status(400).json({
+        message: "Could not find locals.",
+        errors: err,
       });
     }
   };
 
 // Get one local endpoint
-app.get('/local/:id', async (req, res) => {
+app.get("/local/:id", async (req, res) => {
   try {
     const { id } = req.params;
-    const newLocal = await Local.findById(id)
-      .exec();
-    res.json(newLocal)
+    const newLocal = await Local.findById(id).exec();
+    res.json(newLocal);
   } catch (err) {
     throw err;
   }
-})
+});
 
 // Get locals category list endpoint
-app.get('/locals/:category', async (req, res) => {
+app.get("/locals/:category", async (req, res) => {
   try {
     const { category } = req.params;
-    const localCategory = await Local.find({ category })
-      .exec();
+    const localCategory = await Local.find({ category }).exec();
     res.json(localCategory);
-} catch (err) {
-  res.status(400).json({ message: "Could not find category items.", errors: err })
-}
-})
+  } catch (err) {
+    res
+      .status(400)
+      .json({ message: "Could not find category items.", errors: err });
+  }
+});
 
 // Get local categories endpoint
 app.get("/locals/categories", async (req, res) => {
@@ -286,9 +324,11 @@ app.get("/locals/categories", async (req, res) => {
     const allCategories = await LocalCategory.find();
     res.json(allCategories);
   } catch (err) {
-    res.status(400).json({ message: "Could not find categories.", errors: err });
+    res
+      .status(400)
+      .json({ message: "Could not find categories.", errors: err });
   }
-})
+});
 
 // Post new local
 app.post("/locals", parser.single("img_url"), async (req, res) => {
