@@ -305,11 +305,27 @@ app.get("/local/:id", async (req, res) => {
   }
 });
 
+// Get local categories endpoint
+app.get("/locals/categories", async (req, res) => {
+  try {
+    const allCategories = await LocalCategory.find();
+    res.json(allCategories);
+  } catch (err) {
+    res.status(400).json({ message: "Could not find categories.", errors: err });
+  }
+})
+
 // Get locals category list endpoint
 app.get("/locals/:category", async (req, res) => {
   try {
     const { category } = req.params;
+<<<<<<< HEAD
     const localCategory = await Local.find({ category }).exec();
+=======
+    const localCategory = await Local.find({ category })
+      .exec();
+    console.log(localCategory)
+>>>>>>> 98a13454e55e643cd437f172f0a9dd509deca60c
     res.json(localCategory);
   } catch (err) {
     res
@@ -318,6 +334,7 @@ app.get("/locals/:category", async (req, res) => {
   }
 });
 
+<<<<<<< HEAD
 // Get local categories endpoint
 app.get("/locals/categories", async (req, res) => {
   try {
@@ -329,6 +346,9 @@ app.get("/locals/categories", async (req, res) => {
       .json({ message: "Could not find categories.", errors: err });
   }
 });
+=======
+
+>>>>>>> 98a13454e55e643cd437f172f0a9dd509deca60c
 
 // Post new local
 app.post("/locals", parser.single("img_url"), async (req, res) => {
@@ -356,6 +376,7 @@ app.post("/locals", parser.single("img_url"), async (req, res) => {
     }
   });
 });
+
 
 // Start the server
 app.listen(port, () => {
