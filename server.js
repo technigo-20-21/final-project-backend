@@ -7,9 +7,9 @@ import bcrypt from "bcrypt-nodejs";
 import dotenv from "dotenv";
 import cloudinaryStorage from "multer-storage-cloudinary";
 import multer from "multer";
+import cloudinaryFramework from "cloudinary";
 import Local from "./models/localModel";
 import localsData from "./data/locals.json";
-import cloudinaryFramework from "cloudinary";
 import localCategoriesData from "./data/local-categories.json";
 
 dotenv.config();
@@ -121,6 +121,7 @@ if (process.env.RESET_DATABASE) {
     await Local.deleteMany();
     await LocalCategory.deleteMany();
     localsData.forEach((item) => {
+      item.category.toLocaleLowerCase();
       const imagePath = `./logos/${item.category.toLocaleLowerCase()}/${
         item.img
       }`;
@@ -139,6 +140,7 @@ if (process.env.RESET_DATABASE) {
         .then((result) => {
           item.img_url = result.url;
           item.img_id = result.public_id;
+          item.name.toLocaleLowerCase();
           console.log(item)
           const newLocal = new Local(item);
           newLocal.save();
@@ -283,7 +285,7 @@ app.get('/locals/:category', async (req, res) => {
   try {
     const { category } = req.params;
     const localCategory = await Local.find({ category })
-      .exec();
+      // .exec();
     console.log(localCategory)
     res.json(localCategory);
 } catch (err) {
