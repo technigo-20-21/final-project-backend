@@ -1,26 +1,38 @@
 [
     {
-        "category": "restaurant",
-        "display_name": "Äta ute"
-    },
+            "name": "restaurant",
+            "display_name": "Äta ute",
+            "img": "dinner.jpg"
+    }, 
     {
-        "category": "cafe",
-        "display_name": "Fika"
-    },
-    {
-        "category": "groceries",
-        "display_name": "Mat & Götta"
-    },
-    {
-        "category": "shopping",
-        "display_name": "Shoppa"
-    },
-    {
-        "category": "beauty",
-        "display_name": "Hälsa & Skönhet"
-    },
-    {
-        "category": "service",
-        "display_name": "Service"
-    }
+           "name": "cafe",
+           "display_name": "Fika",
+           "img": "cafe.jpg"
+         
+     },
+     { 
+           "name": "groceries",
+           "display_name": "Mat & Götta",
+          "img": "groceries.jpeg"
+     },
+     {
+
+           "name": "shopping",
+           "display_name": "Shoppa",
+           "img": "shopping.jpeg"
+         
+     },
+     {
+             "name": "beauty",
+             "display_name": "Hälsa & Skönhet",
+             "img": "hair.jpg"
+     },
+     {
+
+           "name": "service",
+             "display_name": "Service",
+             "img": "shoecare.jpg"
+         
+     }
+    
 ]
