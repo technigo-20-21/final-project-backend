@@ -69,10 +69,6 @@ const userSchema = new mongoose.Schema({
     type: [String],
     default: [],
   },
-  // favourites: {
-  //   type: [mongoose.Schema.Types.ObjectId],
-  //   ref: "Local",
-  // },
 });
 
 userSchema.pre("save", async function (next) {
@@ -195,7 +191,6 @@ app.post("/users", async (req, res) => {
   try {
     const { firstName, lastName, email, password } = req.body;
     const emailLowerCase = email.toLowerCase();
-
     const newUser = new User({
       firstName,
       lastName,
@@ -310,16 +305,17 @@ app.get("/locals/categories", async (req, res) => {
     const allCategories = await LocalCategory.find();
     res.json(allCategories);
   } catch (err) {
-    res.status(400).json({ message: "Could not find categories.", errors: err });
+    res
+      .status(400)
+      .json({ message: "Could not find categories.", errors: err });
   }
-})
+});
 
 // Get locals category list endpoint
 app.get("/locals/:category", async (req, res) => {
   try {
     const { category } = req.params;
-    const localCategory = await Local.find({ category })
-      .exec();
+    const localCategory = await Local.find({ category }).exec();
     res.json(localCategory);
   } catch (err) {
     res
@@ -366,7 +362,6 @@ app.post("/locals", parser.single("img_url"), async (req, res) => {
     }
   });
 });
-
 
 // Start the server
 app.listen(port, () => {
